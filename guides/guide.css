@@ -1,0 +1,21 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url("/assets/fonts/MinecraftStandard.otf") format("opentype");
+}
+
+body {
+    background: #000;
+}
+
+.guide-img {
+    width: 100vw;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
