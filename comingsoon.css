@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Minecraft';
-    src: url("/assets/fonts/MinecraftStandard.otf") format("opentype");
+    src: url("./assets/fonts/MinecraftStandard.otf") format("opentype");
 }
 
 body {
