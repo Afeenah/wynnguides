@@ -37,7 +37,7 @@ body {
     padding-top: 2%;
     text-align: center;
     font-family: 'Minecraft', sans-serif;
-    font-size: 120%;
+    font-size: 1.2vw;
     color: white;
 }
 .archetype-card-inline-icon {
@@ -50,7 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     width: fit-content;
-    max-width: 35%; /* change this for entire section */
+    max-width: 34vw; /* change this for entire section */
 }
 .guide-heading {
     font-family: 'Minecraft', sans-serif;
@@ -70,7 +70,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Minecraft', sans-serif;
-    font-size: 40%; /* Change this for size */
+    font-size: 0.5vw; /* Change this for size */
     color: white;
     text-align: center;
 }
@@ -84,7 +84,8 @@ body {
 .spell-name {
     max-width: 15.5em;
     align-self: center;
-    font-size: 0.7em; /* Don't touch */
+    font-size: 1em; /* Don't touch */
+    transform: translateY(-2em);
     overflow: hidden;
 }
 .spell-text {
@@ -105,7 +106,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Minecraft', sans-serif;
-    font-size: 100%;
+    font-size: 1.1vw;
     color: white;
     width: fit-content;
     padding-top: 3%;
