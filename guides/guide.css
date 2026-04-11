@@ -14,8 +14,13 @@ body {
 }
 
 .guide-img {
-    width: 100vw;
-    height: auto;
-    max-width: 100%;
-    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+    cursor: zoom-in;
+}
+
+.guide-img:hover {
+    transform: scale(1.5);
+    transition: transform 0.2s ease;
 }
