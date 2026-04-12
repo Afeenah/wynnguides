@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="guide.css">
-    <script src="../analytics.js"></script>
-    <script src="./guide.js"></script>
-    <script src="./icons.js"></script>
+    <script src="../scripts/util.js"></script>
+    <script src="../scripts/analytics.js"></script>
+    <script src="../scripts/icons.js"></script>
+    <script src="../scripts/aspects.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>MirrorShade Guide</title>
 </head>
@@ -162,51 +163,21 @@
         <!-- Aspects -->
         <div class="guide-heading"><b>-- Aspects --</b></div>
         <div class="aspects">
-            <div class="aspect">
-                <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                <div class="aspect-name">
-                    <b style="color: #9400FF; font-size: 0.95em">Trickster's Embodiment of Malevolent Mischief</b>
-                    <div class="aspect-description">
-                        You get this mainly for the <b>+1 <n-red> Mirror Clone</n-red></b>.
-                    </div>
-                </div>
-            </div>
-            <div class="aspect">
-                <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                <div class="aspect-name">
-                    <b style="color: #FF0034">Aspect of the Calling Card</b>
-                    <div class="aspect-description">
-                        Increases the Maximum <n-red><b> Marked</b></n-red> = More Dps.
-                    </div>
-                </div>
-            </div>
-            <div class="aspect">
-                <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                <div class="aspect-name">
-                    <b style="color: #FF0034">Aspect of Visual Distortion</b>
-                    <div class="aspect-description">
-                        Decrease <n-yel><b> Mirage</b></n-yel> Cooldown.
-                    </div>
-                </div>
-            </div>
-            <div class="aspect">
-                <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                <div class="aspect-name">
-                    <b style="color: #FF0034">Aspect of Unyielding Fate</b>
-                    <div class="aspect-description">
-                        Increase <n-pink><b> Backstab</b></n-pink> angle. Good Quality of Life!
-                    </div>
-                </div>
-            </div>
-            <div class="aspect">
-                <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                <div class="aspect-name">
-                    <b style="color: #00F6FF">Aspect of the Pinwheel</b>
-                    <div class="aspect-description">
-                        Increases <ng-as><b> Spin-Attack</b></ng-as> range, Allowing for a easier time hitting enemies.
-                    </div>
-                </div>
-            </div>
+            <aspect-display class="Assassin" name="Trickster's Embodiment of Malevolent Mischief" rarity="mythic">
+                You get this mainly for the <b>+1 <n-red></n-red> Mirror Clone</b>.
+            </aspect-display>
+            <aspect-display class="Assassin" name="Aspect of Visual Distortion" rarity="fabled">
+                Increases the Maximum <n-red></n-red> <b>Marked</b> = More Dps.
+            </aspect-display>
+            <aspect-display class="Assassin" name="Aspect of Visual Distortion" rarity="fabled">
+                Decrease <n-yel></n-yel> <b>Mirage</b> Cooldown.
+            </aspect-display>
+            <aspect-display class="Assassin" name="Aspect of Unyielding Fate" rarity="fabled">
+                Increase <n-pink></n-pink><b>Backstab</b> angle. Good Quality of Life!
+            </aspect-display>
+            <aspect-display class="Assassin" name="Aspect of the Pinwheel" rarity="legendary">
+                Increases <ng-as></ng-as> <b>Spin-Attack</b> range, Allowing for a easier time hitting enemies.
+            </aspect-display>
         </div>
     </div>
 </div>

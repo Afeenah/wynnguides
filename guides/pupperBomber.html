@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="guide.css">
-    <script src="../analytics.js"></script>
-    <script src="./guide.js"></script>
-    <script src="./icons.js"></script>
+    <script src="../scripts/util.js"></script>
+    <script src="../scripts/analytics.js"></script>
+    <script src="../scripts/icons.js"></script>
+    <script src="../scripts/aspects.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Puppet Bomber Guide</title>
 </head>
@@ -131,52 +132,22 @@
         <!-- Aspects -->
         <div class="guide-heading"><b>-- Aspects --</b></div>
         <div class="aspects">
-            <div class="aspect">
-                <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                <div class="aspect-name">
-                    <b style="color: #9400FF; font-size: 0.95em"> Ritualist's Embodiment of the Ancestral Avatar</b>
-                    <div class="aspect-description">
-                        Allows you to activate <n-red><b> Awakened</b></n-red> faster, and you can sustain
-                        <n-red><b> Awakened</b></n-red> state for longer.
-                    </div>
-                </div>
-            </div>
-            <div class="aspect">
-                <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                <div class="aspect-name">
-                    <b style="color: #FF0034">Aspect of Stances</b>
-                    <div class="aspect-description">
-                        Buffs all the effects of <n-red><b> Mystic Masks</b></n-red>.
-                    </div>
-                </div>
-            </div>
-            <div class="aspect">
-                <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                <div class="aspect-name">
-                    <b style="color: #FF0034">Aspect of Beckoned Legion</b>
-                    <div class="aspect-description">
-                        <n-red><b> Puppet Master</b></n-red> gains more Puppets. Increasing the damage potential.
-                    </div>
-                </div>
-            </div>
-            <div class="aspect">
-                <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                <div class="aspect-name">
-                    <b style="color: #FF0034">Aspect of the Channeler</b>
-                    <div class="aspect-description">
-                        Makes it easier to buff teammates with the larger <n-red><b> Tribal Chants</b></n-red> range. Good QOL
-                    </div>
-                </div>
-            </div>
-            <div class="aspect">
-                <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                <div class="aspect-name">
-                    <b style="color: #00F6FF">Aspect of Acceleration</b>
-                    <div class="aspect-description">
-                        Allows <n-red><b> Puppets</b></n-red> and <n-red><b> Effigies</b></n-red> to move faster. Good QOL
-                    </div>
-                </div>
-            </div>
+            <aspect-display class="Shaman" name="Ritualist's Embodiment of the Ancestral Avatar" rarity="mythic">
+                Allows you to activate <n-red></n-red> <b>Awakened</b> faster, and you can sustain
+                <n-red></n-red> <b>Awakened</b> state for longer.
+            </aspect-display>
+            <aspect-display class="Shaman" name="Aspect of Stances" rarity="fabled">
+                Buffs all the effects of <n-red></n-red> <b>Mystic Masks</b>.
+            </aspect-display>
+            <aspect-display class="Shaman" name="Aspect of Beckoned Legion" rarity="fabled">
+                <n-red></n-red> <b>Puppet Master</b> gains more Puppets. Increasing the damage potential.
+            </aspect-display>
+            <aspect-display class="Shaman" name="Aspect of Channeler" rarity="fabled">
+                Makes it easier to buff teammates with the larger <n-red></n-red> <b>Tribal Chants</b> range. Good QOL
+            </aspect-display>
+            <aspect-display class="Shaman" name="Aspect of Acceleration" rarity="legendary">
+                Allows <n-red></n-red> <b>Puppets</b> and <n-red></n-red> <b>Effigies</b> to move faster. Good QOL!
+            </aspect-display>
         </div>
     </div>
 </div>

@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="guide.css">
-        <script src="../analytics.js"></script>
-        <script src="./guide.js"></script>
-        <script src="./icons.js"></script>
+        <script src="../scripts/util.js"></script>
+        <script src="../scripts/analytics.js"></script>
+        <script src="../scripts/icons.js"></script>
+        <script src="../scripts/aspects.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>Acrobat Guide</title>
     </head>
@@ -140,53 +141,23 @@
 
                 <div class="guide-heading"><b>-- Aspects --</b></div>
                 <div class="aspects">
-                    <div class="aspect">
-                        <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                        <div class="aspect-name">
-                            <b style="color: #9400FF">Acrobat's Embodiment of Gravity Defiance</b>
-                            <div class="aspect-description">
-                                Overall Good aspect, Gives extra <n-red><b> Lacerate</b></n-red> Hits,
-                                and Allows you to stack <b>Momentum</b> faster at T2+.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="aspect">
-                        <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                        <div class="aspect-name">
-                            <b style="color: #FF0034">Aspect of the Agile Blade</b>
-                            <div class="aspect-description">
-                                Gives + <n-blue><b> Aerial Ace</b></n-blue> Duration. Good QOL.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="aspect">
-                        <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                        <div class="aspect-name">
-                            <b style="color: #FF0034">Aspect of the Unstoppable Force</b>
-                            <div class="aspect-description">
-                                Gives + <n-blue><b> Aerial Ace</b></n-blue> Damage. Decent Damage Increase.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="aspect">
-                        <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                        <div class="aspect-name">
-                            <b style="color: #00F6FF">Aspect of the Stellar Fury</b>
-                            <div class="aspect-description">
-                                Increases <n-red><b> Multi-Hit</b></n-red> hits, very good for DPS.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="aspect">
-                        <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                        <div class="aspect-name">
-                            <b style="color: #00F6FF">Aspect of the Pinwheel</b>
-                            <div class="aspect-description">
-                                Increases <n-red><b> Lacerate</b></n-red> range,
-                                Allowing for a easier time hitting enemies.
-                            </div>
-                        </div>
-                    </div>
+                    <aspect-display class="Assassin" name="Acrobat's Embodiment of Gravity Defiance" rarity="mythic">
+                        Overall Good aspect, Gives extra <n-red></n-red> <b>Lacerate</b> Hits,
+                        and Allows you to stack <b>Momentum</b> faster at T2+.
+                    </aspect-display>
+                    <aspect-display class="Assassin" name="Aspect of the Agile Blade" rarity="fabled">
+                        Gives + <n-blue></n-blue> <b>Aerial Ace</b> Duration. Good QOL.
+                    </aspect-display>
+                    <aspect-display class="Assassin" name="Aspect of the Unstoppable Force" rarity="fabled">
+                        Gives + <n-blue></n-blue> <b> Aerial Ace</b> Damage. Decent Damage Increase.
+                    </aspect-display>
+                    <aspect-display class="Assassin" name="Aspect of the Stellar Fury" rarity="legendary">
+                        Increases <n-red></n-red> <b>Multi-Hit</b> hits, very good for DPS.
+                    </aspect-display>
+                    <aspect-display class="Assassin" name="Aspect of the Pinwheel" rarity="legendary">
+                        Increases <n-red></n-red> <b>Lacerate</b> range,
+                        Allowing for an easier time hitting enemies.
+                    </aspect-display>
                 </div>
             </div>
         </div>

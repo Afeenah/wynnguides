@@ -3,180 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="guide.css">
-    <script src="../analytics.js"></script>
-    <script src="./guide.js"></script>
-    <script src="./icons.js"></script>
+    <script src="../scripts/util.js"></script>
+    <script src="../scripts/analytics.js"></script>
+    <script src="../scripts/icons.js"></script>
+    <script src="../scripts/aspects.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Summoner Guide</title>
 </head>
-<body>
-<div class="guide-outer">
-    <!-- Archetype Card -->
-    <div class="archetype-card">
-        <img class="archetype-card-img" style="object-position: 2rem -7rem; width: 42rem" src="../assets/images/shamanIcon.webp" alt="Icon">
-        <span class="archetype-card-title">
-             <b>- <img src="../assets/images/classSummoner.png" class="archetype-card-inline-icon" alt="Icon"> Summoner -</b>
-        </span>
-        <div style="text-align: center; color: #262626; padding: 1rem"><b>By Afeena</b></div>
-    </div>
+    <body>
+        <div class="guide-outer">
+            <!-- Archetype Card -->
+            <div class="archetype-card">
+                <img class="archetype-card-img" style="object-position: 2rem -7rem; width: 42rem" src="../assets/images/shamanIcon.webp" alt="Icon">
+                <span class="archetype-card-title">
+                     <b>- <img src="../assets/images/classSummoner.png" class="archetype-card-inline-icon" alt="Icon"> Summoner -</b>
+                </span>
+                <div style="text-align: center; color: #262626; padding: 1rem"><b>By Afeena</b></div>
+            </div>
 
-    <!-- Column 1 -->
-    <div class="guide-column">
-        <div class="guide-heading"><b>-- Spell Cycle --</b></div>
+            <!-- Column 1 -->
+            <div class="guide-column">
+                <div class="guide-heading"><b>-- Spell Cycle --</b></div>
 
-        <!-- Spell Cycles -->
-        <div class="guide-subheading">- Basic Cycle -</div>
-        <div class="spell-cycle-outer">
-            <ng-sh class="spell-display"> Haul </ng-sh>
-            <div class="spell-in-between">></div>
-            <ng-sh class="spell-display"> Aura </ng-sh>
-        </div>
-        <div class="guide-subheading">- Aura Spam Cycle -</div>
-        <div class="spell-cycle-outer">
-            <ng-sh class="spell-display"> Haul </ng-sh>
-            <div class="spell-in-between">></div>
-            <ng-sh class="spell-display"> Aura </ng-sh>
-            <div class="spell-in-between">x4-7</div>
-        </div>
+                <!-- Spell Cycles -->
+                <div class="guide-subheading">- Basic Cycle -</div>
+                <div class="spell-cycle-outer">
+                    <ng-sh class="spell-display"> Haul </ng-sh>
+                    <div class="spell-in-between">></div>
+                    <ng-sh class="spell-display"> Aura </ng-sh>
+                </div>
+                <div class="guide-subheading">- Aura Spam Cycle -</div>
+                <div class="spell-cycle-outer">
+                    <ng-sh class="spell-display"> Haul </ng-sh>
+                    <div class="spell-in-between">></div>
+                    <ng-sh class="spell-display"> Aura </ng-sh>
+                    <div class="spell-in-between">x4-7</div>
+                </div>
 
 
-        <div style="padding: 0.5rem"></div>
+                <div style="padding: 0.5rem"></div>
 
-        <!-- Abilities -->
-        <div class="abilities-outer">
-            <div class="ability-inner-double">
-                <div class="ability">
-                    <ng-sh class="ability-icon"><div class="ability-icon-text">Totem</div></ng-sh>
-                    <div class="ability-description">
-                        Use this when you need to reposition your <ng-sh><b> Totem</b></ng-sh>. Can replace
-                        <ng-sh><b> Haul</b></ng-sh>. in the cycle
+                <!-- Abilities -->
+                <div class="abilities-outer">
+                    <div class="ability-inner-double">
+                        <div class="ability">
+                            <ng-sh class="ability-icon"><div class="ability-icon-text">Totem</div></ng-sh>
+                            <div class="ability-description">
+                                Use this when you need to reposition your <ng-sh><b> Totem</b></ng-sh>. Can replace
+                                <ng-sh><b> Haul</b></ng-sh>. in the cycle
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <n-blue class="ability-icon"><div class="ability-icon-text">Bullwhip</div></n-blue>
+                            <div class="ability-description large">
+                                This is used to swap between minion targeting and provides a huge damage bonus.
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="ability">
-                    <n-blue class="ability-icon"><div class="ability-icon-text">Bullwhip</div></n-blue>
-                    <div class="ability-description large">
-                        This is used to swap between minion targeting and provides a huge damage bonus.
+                    <div class="ability-inner-double">
+                        <div class="ability">
+                            <n-red class="ability-icon"><div class="ability-icon-text">Commander</div></n-red>
+                            <div class="ability-description">
+                                When casting
+                                <b>[SHIFT] + <ng-sh>Aura</ng-sh>.</b> when commander is available will make your minions less dumb.
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <n-red class="ability-icon"><div class="ability-icon-text small">Humming-birds</div></n-red>
+                            <div class="ability-description small">
+                                These birds can be released using
+                                <b>[SHIFT] + <ng-sh> Haul</ng-sh>.</b>, they deal significant amounts of damage, but you lose the
+                                <b>Jump Height & Speed Boost</b> they provide.
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="ability-inner-double">
-                <div class="ability">
-                    <n-red class="ability-icon"><div class="ability-icon-text">Commander</div></n-red>
-                    <div class="ability-description">
-                        When casting
-                        <b>[SHIFT] + <ng-sh>Aura</ng-sh>.</b> when commander is available will make your minions less dumb.
-                    </div>
-                </div>
-                <div class="ability">
-                    <n-red class="ability-icon"><div class="ability-icon-text small">Humming-birds</div></n-red>
-                    <div class="ability-description small">
-                        These birds can be released using
-                        <b>[SHIFT] + <ng-sh> Haul</ng-sh>.</b>, they deal significant amounts of damage, but you lose the
-                        <b>Jump Height & Speed Boost</b> they provide.
-                    </div>
-                </div>
-            </div>
-            <div class="ability">
-                <ut-su class="ability-icon"><div class="ability-icon-text">Patchwork Abomination</div></ut-su>
-                <div class="ability-description large">
-                    This ultimate summons the Patchwork Abomination that doubles your DPS use wisely.
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Column 2 -->
-    <div class="guide-column">
-
-        <!-- Weapons -->
-        <div class="guide-heading"><b>-- Weapons --</b></div>
-        <div class="weapons">
-            <div class="weapon">
-                <div class="weapon-icon" style="background-image: url('../assets/images/weaponOlympic.png')">
-                    <img class="weapon-label" src="../assets/images/star.png" alt="Icon">
-                </div>
-                <div class="weapon-name" style="color: #9400FF">Olympic</div>
-            </div>
-            <div class="weapon">
-                <div class="weapon-icon" style="background-image: url('../assets/images/weaponHadal.png')">
-                    <img class="weapon-label" src="../assets/images/skull.png" alt="Icon">
-                </div>
-                <div class="weapon-name" style="color: #9400FF">Hadal</div>
-            </div>
-            <div class="weapon">
-                <div class="weapon-icon" style="background-image: url('../assets/images/weaponShaman.png')">
-                </div>
-                <div class="weapon-name" style="color: #FF0034">Panic Zealot</div>
-            </div>
-        </div>
-
-        <div class="guide-subheading" style="font-size: 0.75em; padding-top: 1.5em">- Budget -</div>
-        <div class="weapons">
-            <div class="weapon">
-                <div class="weapon-icon" style="background-image: url('../assets/images/weaponShaman.png')">
-                </div>
-                <div class="weapon-name" style="color: #00F6FF">Overdrive</div>
-            </div>
-            <div class="weapon">
-                <div class="weapon-icon" style="background-image: url('../assets/images/weaponShaman.png')">
-                </div>
-                <div class="weapon-name" style="color: #00F6FF">The Watched</div>
-            </div>
-        </div>
-
-        <div style="padding: 0.5rem"></div>
-
-        <!-- Aspects -->
-        <div class="guide-heading"><b>-- Aspects --</b></div>
-        <div class="aspects">
-            <div class="aspect">
-                <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                <div class="aspect-name">
-                    <b style="color: #9400FF; font-size: 0.85em">Summoner's Embodiment of the Omnipotent Overseer</b>
-                    <div class="aspect-description">
-                        Gives you <b>+1 <ng-sh> Totem</ng-sh></b>, and at higher tiers it gives you an additional
-                        <n-red><b> Hummingbirds</b></n-red>, overall Dps increase.
+                    <div class="ability">
+                        <ut-su class="ability-icon"><div class="ability-icon-text">Patchwork Abomination</div></ut-su>
+                        <div class="ability-description large">
+                            This ultimate summons the Patchwork Abomination that doubles your DPS use wisely.
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="aspect">
-                <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                <div class="aspect-name">
-                    <b style="color: #FF0034">Aspect of Beckoned Legion</b>
-                    <div class="aspect-description">
-                        <n-red><b> Puppet Master</b></n-red> gains more Puppets. Increasing the damage potential.
-                    </div>
+
+            <!-- Column 2 -->
+            <div class="guide-column">
+
+                <!-- Weapons -->
+                <div class="guide-heading"><b>-- Weapons --</b></div>
+                <div class="weapons">
+                    <weapon-display name="Olympic" rarity="mythic" label="star.png"></weapon-display>
+                    <weapon-display name="Hadal" rarity="mythic" label="skull.png"></weapon-display>
+                    <weapon-display name="Panic Zealot" img="Shaman" rarity="fabled" label=""></weapon-display>
                 </div>
-            </div>
-            <div class="aspect">
-                <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                <div class="aspect-name">
-                    <b style="color: #FF0034">Aspect of Occupation</b>
-                    <div class="aspect-description">
-                        Increases the range of <n-red><b> Hummingbirds</b></n-red>. Good QOL.
-                    </div>
+
+                <div class="guide-subheading" style="font-size: 0.75em; padding-top: 1.5em">- Budget -</div>
+                <div class="weapons">
+                    <weapon-display name="Overdrive" img="Shaman" rarity="legendary" label=""></weapon-display>
+                    <weapon-display name="The Watched" img="Shaman" rarity="legendary" label=""></weapon-display>
                 </div>
-            </div>
-            <div class="aspect">
-                <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                <div class="aspect-name">
-                    <b style="color: #FF0034">Aspect of Motivation</b>
-                    <div class="aspect-description">
-                        <n-blue><b> Bullwhip</b></n-blue> gains + Damage, high damage increase
-                    </div>
-                </div>
-            </div>
-            <div class="aspect">
-                <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
-                <div class="aspect-name">
-                    <b style="color: #00F6FF">Aspect of Acceleration</b>
-                    <div class="aspect-description">
-                        Allows <n-red><b> Puppets</b></n-red> and <n-red><b> Effigies</b></n-red> to move faster. Good QOL
-                    </div>
+
+                <div style="padding: 0.5rem"></div>
+
+                <!-- Aspects -->
+                <div class="guide-heading"><b>-- Aspects --</b></div>
+                <div class="aspects">
+                    <aspect-display class="Shaman" name="Summoner's Embodiment of the Omnipotent Overseer" rarity="mythic">
+                        Gives you <b>+1 <ng-sh></ng-sh> Totem</b>, and at higher tiers it gives you an additional
+                        <n-red></n-red> <b>Hummingbirds</b>, overall Dps increase.
+                    </aspect-display>
+                    <aspect-display class="Shaman" name="Aspect of Beckoned Legion" rarity="fabled">
+                        <n-red></n-red> <b>Puppet Master</b> gains more Puppets. Increasing the damage potential.
+                    </aspect-display>
+                    <aspect-display class="Shaman" name="Aspect of Occupation" rarity="fabled">
+                        Increases the range of <n-red></n-red> <b>Hummingbirds</b>. Good QOL.
+                    </aspect-display>
+                    <aspect-display class="Shaman" name="Aspect of Motivation" rarity="fabled">
+                        <n-blue></n-blue> <b>Bullwhip</b> gains + Damage, high damage increase
+                    </aspect-display>
+                    <aspect-display class="Shaman" name="Aspect of Acceleration" rarity="legendary">
+                        Allows <n-red></n-red> <b>Puppets</b> and <n-red></n-red> <b>Effigies</b> to move faster. Good QOL!
+                    </aspect-display>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-</body>
+
+    </body>
 </html>
