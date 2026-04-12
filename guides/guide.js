@@ -1,8 +1,15 @@
-const img = document.querySelector('.guide-img');
-img.addEventListener('click', () => {
-    img.classList.toggle('zoomed');
-});
+function fitToScreen() {
+    const wrapper = document.querySelector('.guide-outer');
+    if (!wrapper) return;
 
-if (!window.location.search.includes('v')) {
-    window.location.replace(window.location.pathname + '?v=2');
+    const scale = Math.min(
+        1,
+        window.innerWidth / wrapper.scrollWidth
+    );
+
+    const newFontSize = 16 * scale;
+    document.documentElement.style.fontSize = Math.max(newFontSize, 10) + 'px';
 }
+
+window.addEventListener('load', fitToScreen);
+window.addEventListener('resize', fitToScreen);
