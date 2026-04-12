@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="guide.css">
         <script src="../analytics.js"></script>
         <script src="./guide.js"></script>
+        <script src="./icons.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>Acrobat Guide</title>
     </head>
@@ -26,131 +27,83 @@
                 <!-- Spell Cycles -->
                 <div class="guide-subheading">- Simple Cycle -</div>
                 <div class="spell-cycle-outer">
-                    <div class="spell-display">
-                        <img src="../assets/images/nodeRed.png" alt="Icon">
-                        <div class="spell-name">Lacerate</div>
-                    </div>
+                    <n-red class="spell-display"> Lacerate </n-red>
                     <div class="spell-in-between">></div>
-                    <div class="spell-display">
-                        <img src="../assets/images/nodePink.png" alt="Icon">
-                        <div class="spell-name">Hop</div>
-                    </div>
+                    <n-pink class="spell-display"> Hop </n-pink>
                     <div class="spell-in-between">></div>
-                    <div class="spell-display">
-                        <img src="../assets/images/nodeGreenAssassin.png" alt="Icon">
-                        <div class="spell-name">Multihit</div>
-                    </div>
+                    <n-red class="spell-display"> Multi-Hit </n-red>
                 </div>
 
                 <div class="guide-subheading">- Advanced Cycle -</div>
                 <div class="spell-cycle-outer">
-                    <div class="spell-display">
-                        <img src="../assets/images/nodeRed.png" alt="Icon">
-                        <div class="spell-name">Lacerate</div>
-                    </div>
+                    <n-red class="spell-display"> Lacerate </n-red>
                     <div class="spell-in-between">></div>
-                    <div class="spell-display">
-                        <img src="../assets/images/nodePink.png" alt="Icon">
-                        <div class="spell-name">Hop</div>
-                    </div>
+                    <n-pink class="spell-display"> Hop </n-pink>
                     <div class="spell-in-between">></div>
-                    <div class="spell-display">
-                        <img src="../assets/images/nodeGreenAssassin.png" alt="Icon">
-                        <div class="spell-name">Multihit</div>
-                    </div>
+                    <ng-as class="spell-display"> Multi-Hit </ng-as>
                     <div class="spell-in-between">></div>
-                    <div class="spell-display">
-                        <img src="../assets/images/nodeRed.png" alt="Icon">
-                        <div class="spell-name">Lacerate</div>
-                    </div>
+                    <n-red class="spell-display"> Lacerate </n-red>
                     <div class="spell-in-between">></div>
-                    <div class="spell-display">
-                        <img src="../assets/images/nodeGreenAssassin.png" alt="Icon">
-                        <div class="spell-name">Dash</div>
-                    </div>
+                    <ng-as class="spell-display"> Dash </ng-as>
                 </div>
 
                 <div style="padding: 0.5rem"></div>
 
                 <!-- Abilities -->
                 <div class="abilities-outer">
-                    <div class="ability">
-                        <div class="ability-icon">
-                            <img src="../assets/images/nodeRed.png" alt="Icon">
-                            <b class="ability-name">Swan Dive</b>
-                        </div>
-                        <div class="ability-description" style="width: 26rem; font-size: 0.35rem">
+                    <div class="ability" style="font-size: 1rem">
+                        <n-red class="ability-icon"><div class="ability-icon-text">Swan Dive</div></n-red>
+                        <div class="ability-description">
                             Build <b>Momentum</b>, the more you have the more damage you deal when you fall. If you don't have
-                            <img src="../assets/images/nodeYellow.png" alt="Icon"> <b>Righting Reflex</b> press <b>[SHIFT]</b> to plunge.
-                            <img src="../assets/images/nodeYellow.png" alt="Icon"> <b>Dancing Blade</b> launches you up while having <b>+3 Momentum</b>. When you fall
-                            <img src="../assets/images/nodeYellow.png" alt="Icon"> <b>Braced Impact</b> gives <b>50% Resistance</b>,
-                            <img src="../assets/images/nodeYellow.png" alt="Icon"> <b>Petal Storm</b> increases damage dealt when having max
-                            <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Jasmine Bloom</b>.
+                            <n-yel><b> Righting Reflex</b></n-yel>press <b>[SHIFT]</b> to plunge.<n-yel><b> Dancing Blade</b></n-yel>
+                            launches you up while having <b>+3 Momentum</b>. When you fall <n-yel><b> Braced Impact </b></n-yel>
+                            gives <b>50% Resistance</b>, <n-yel><b> Petal Storm</b></n-yel> increases damage dealt when having max
+                            <n-red><b>Jasmine Bloom</b></n-red>.
                         </div>
                     </div>
-
+                    <div class="ability-inner-double">
+                        <div class="ability">
+                            <ng-as class="ability-icon"><div class="ability-icon-text">Smoke Bomb</div></ng-as>
+                            <div class="ability-description large">
+                                Cast this every 3 cycles or to reposition.
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <n-blue class="ability-icon"><div class="ability-icon-text">Shurikens</div></n-blue>
+                            <div class="ability-description large">
+                                If you build has this then
+                                <i-lmb></i-lmb> after <ng-as> <b>Multihit</b></ng-as> to fire.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ability-inner-double">
+                        <div class="ability">
+                            <n-blue class="ability-icon"><div class="ability-icon-text">Aerial Ace</div></n-blue>
+                            <div class="ability-description">
+                                Hitting an enemy with <n-red><b> Swan Dive</b></n-red> will get you <b>+35% Damage Boost</b>
+                                for <b>7.5s</b> you want to try to maintain this.
+                            </div>
+                        </div>
+                        <div class="ability">
+                            <n-blue class="ability-icon"><div class="ability-icon-text">Weightless</div></n-blue>
+                            <div class="ability-description large">
+                                <b>+1</b><i-mana></i-mana> when <b>1.25+</b> blocks in the air. This is your mana printing ability.
+                            </div>
+                        </div>
+                    </div>
                     <div class="ability">
-                        <div class="ability-icon">
-                            <img src="../assets/images/nodeGreenAssassin.png" alt="Icon">
-                            <b class="ability-name">Smoke Bomb</b>
+                        <ut-ac class="ability-icon"><div class="ability-icon-text">Serpent's Garden</div></ut-ac>
+                        <div class="ability-description large">
+                            This is Acrobat's ultimate ability, in many cases more than Doubles your DPS.
+                            Use wisely as enemies can move away from your Garden!!!
+                            <b>(This problem can be negated with the Efflorescence Major Id).</b>
                         </div>
-                        <div class="ability-description" style="width: 10.89rem">
-                            Cast this every 3 cycles or to reposition.
-                        </div>
-                    </div>
-
-                    <div class="ability">
-                        <div class="ability-icon">
-                            <img src="../assets/images/nodeBlue.png" alt="Icon">
-                            <b class="ability-name">Shurikens</b>
-                        </div>
-                        <div class="ability-description" style="width: 10.89rem">
-                            If you build has this then
-                            <img src="../assets/images/clickLeft.png" alt="Icon" style="height: 0.75rem !important;"> after
-                            <img src="../assets/images/nodeGreenAssassin.png" alt="Icon"> <b>Multihit</b> to fire.
-                        </div>
-                    </div>
-
-                    <div class="ability">
-                        <div class="ability-icon">
-                            <img src="../assets/images/nodeBlue.png" alt="Icon">
-                            <b class="ability-name">Aerial Ace</b>
-                        </div>
-                        <div class="ability-description" style="width: 10.89rem; font-size: 0.4rem">
-                            Hitting an enemy with
-                            <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Swan Dive</b> will get you <b>+35% Damage Boost</b> for <b>7.5s</b> you want to try to maintain this.
-                        </div>
-                    </div>
-
-                    <div class="ability">
-                        <div class="ability-icon">
-                            <img src="../assets/images/nodeBlue.png" alt="Icon">
-                            <b class="ability-name">Weightless</b>
-                        </div>
-                        <div class="ability-description" style="width: 10.89rem; font-size: 0.5rem">
-                            <b>+1</b><img src="../assets/images/mana.png" style="height: 0.5rem !important; transform: translateY(-0.2em); " alt="Icon">
-                            when <b>1.25+</b> blocks in the air. This is your mana printing ability.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ability">
-                    <div class="ability-icon">
-                        <img src="../assets/images/ultimateAcrobat.png" alt="Icon">
-                        <b class="ability-name" style="font-size: 0.35em">Serpent's Garden</b>
-                    </div>
-                    <div class="ability-description" style="width: 26rem; font-size: 0.45rem">
-                        This is Acrobat's ultimate ability, in many cases more than Doubles your DPS.
-                        Use wisely as enemies can move away from your Garden!!!
-                        <b>(This problem can be negated with the Efflorescence Major Id).</b>
                     </div>
                 </div>
             </div>
 
-            <!-- Column 2 -->
-            <div class="guide-column">
 
-                <!-- Weapons -->
+            <div class="guide-column">
                 <div class="guide-heading"><b>-- Weapons --</b></div>
                 <div class="weapons">
                     <div class="weapon">
@@ -181,9 +134,10 @@
                     </div>
                 </div>
 
+
                 <div style="padding: 0.5rem"></div>
 
-                <!-- Aspects -->
+
                 <div class="guide-heading"><b>-- Aspects --</b></div>
                 <div class="aspects">
                     <div class="aspect">
@@ -191,8 +145,8 @@
                         <div class="aspect-name">
                             <b style="color: #9400FF">Acrobat's Embodiment of Gravity Defiance</b>
                             <div class="aspect-description">
-                                Overall Good aspect, Gives extra
-                                <img src="../assets/images/nodeRed.png" alt="Icon"> Lacerate Hits, and Allows you to stack momentum faster at T2+.
+                                Overall Good aspect, Gives extra <n-red><b> Lacerate</b></n-red> Hits,
+                                and Allows you to stack <b>Momentum</b> faster at T2+.
                             </div>
                         </div>
                     </div>
@@ -201,8 +155,7 @@
                         <div class="aspect-name">
                             <b style="color: #FF0034">Aspect of the Agile Blade</b>
                             <div class="aspect-description">
-                                Gives +
-                                <img src="../assets/images/nodeBlue.png" alt="Icon"> Aerial Ace Duration. Good QOL.
+                                Gives + <n-blue><b> Aerial Ace</b></n-blue> Duration. Good QOL.
                             </div>
                         </div>
                     </div>
@@ -211,8 +164,7 @@
                         <div class="aspect-name">
                             <b style="color: #FF0034">Aspect of the Unstoppable Force</b>
                             <div class="aspect-description">
-                                Gives +
-                                <img src="../assets/images/nodeBlue.png" alt="Icon"> Aerial Ace Damage. Decent Damage Increase.
+                                Gives + <n-blue><b> Aerial Ace</b></n-blue> Damage. Decent Damage Increase.
                             </div>
                         </div>
                     </div>
@@ -221,8 +173,7 @@
                         <div class="aspect-name">
                             <b style="color: #00F6FF">Aspect of the Stellar Fury</b>
                             <div class="aspect-description">
-                                Increases
-                                <img src="../assets/images/nodeGreenAssassin.png" alt="Icon"> Multihit hits, very good for DPS.
+                                Increases <n-red><b> Multi-Hit</b></n-red> hits, very good for DPS.
                             </div>
                         </div>
                     </div>
@@ -231,8 +182,8 @@
                         <div class="aspect-name">
                             <b style="color: #00F6FF">Aspect of the Pinwheel</b>
                             <div class="aspect-description">
-                                Increases
-                                <img src="../assets/images/nodeRed.png" alt="Icon"> Lacerate range, Allowing for a easier time hitting enemies.
+                                Increases <n-red><b> Lacerate</b></n-red> range,
+                                Allowing for a easier time hitting enemies.
                             </div>
                         </div>
                     </div>

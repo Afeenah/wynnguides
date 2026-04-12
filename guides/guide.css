@@ -34,9 +34,11 @@ body {
 }
 
 .archetype-card {
+    align-self: center;
     display: flex;
     flex-direction: column;
     max-width: 33rem;
+    overflow: hidden;
 }
 .archetype-card-img{
     object-fit: cover;
@@ -78,21 +80,23 @@ body {
 
 
 .spell-cycle-outer {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     font-size: 0.5rem; /* Change this for size */
 }
 .spell-display {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding-top: 1em;
+    font-size: 1em;
 }
+.spell-display.small {font-size: 0.9em;}
+.spell-display.tiny {font-size: 0.8em;}
 .spell-display img {
-    width: 6em !important; /* Don't touch */
-    height: 6em !important; /* Don't touch */
+    height: 3.5rem !important; /* Don't touch */
     align-self: center;
-}
-.spell-name {
 }
 .spell-in-between {
     padding-left: 0.75em;
@@ -104,33 +108,58 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 100%;
     margin: 0 auto; /* Centers it */
+    max-width: 30rem;
+}
+.ability-inner-double {
+    display: grid;
+    grid-template-columns: auto auto;
 }
 .ability {
     display: inline-flex;
     font-size: 1rem; /* Change this */
-    padding-top: 0.5rem;
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+    padding-top: 0.5em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
 }
 .ability-icon {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    margin: 0 auto;
+    font-size: 1em;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
 }
 .ability-icon img {
-    height: 3em !important; /* Don't touch */
+    height: 3.5em !important; /* Don't touch */
     align-self: center;
 }
-.ability-name {
+.ability-icon-text{
+    text-align: center;
     font-size: 0.4em;
+    width: 11em;
+    max-width: 11em;
+    overflow: hidden;
+}
+.ability-icon-text.small {
+    font-size: 0.3em;
+}
+.ability-icon-text.tiny {
+    font-size: 0.25em;
 }
 .ability-description {
-    font-size: 0.5em;
-    text-align: center;
+    padding-left: 1em;
+    font-size: 0.4em;
     align-self: center;
-    padding-left: 0.25em;
+}
+.ability-description.small{
+    font-size: 0.35em;
+    align-self: center;
+}
+.ability-description.large{
+    font-size: 0.45em;
+    align-self: center;
 }
 .ability-description img {
     height: 2em !important;
@@ -144,13 +173,13 @@ body {
     align-items: center;
 }
 .aspect{
-    display: flex;
+    display: inline-flex;
+    flex-direction: row;
     font-size: 1rem;
     padding-top: 0.5rem;
     max-width: 25rem;
 }
 .aspect-icon {
-    width: 3.5em !important; /* Don't touch */
     height: 3.5em !important; /* Don't touch */
     align-self: center;
 }
@@ -166,7 +195,7 @@ body {
 }.aspect-description img {
      height: 2em !important;
      vertical-align: bottom;
- }
+}
 
 
 .weapons {
@@ -203,59 +232,6 @@ body {
 
 
 
-
-@media (max-width: 768px) {
-    .guide-outer {
-        flex-direction: column;
-        gap: 2rem;
-        width: 100%;
-    }
-
-    .archetype-card {
-        max-width: 100%;
-        align-items: center;
-    }
-
-    .archetype-card-img {
-        width: 80vw;
-        height: 80vw;
-        object-position: center;
-    }
-
-    .guide-column {
-        min-width: auto;
-        max-width: 100%;
-        width: 100%;
-        padding: 0 15px;
-    }
-
-    .spell-cycle-outer {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .ability {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .weapons {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .aspect {
-        flex-direction: column;
-        align-items: center;
-        max-width: 100%;
-        padding: 0 15px;
-    }
-
-    .aspect-description {
-        padding-left: 0;
-    }
-}
 
 
 

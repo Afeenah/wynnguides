@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="guide.css">
     <script src="../analytics.js"></script>
     <script src="./guide.js"></script>
+    <script src="./icons.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Puppet Bomber Guide</title>
 </head>
@@ -26,122 +27,76 @@
         <!-- Spell Cycles -->
         <div class="guide-subheading">- Setup -</div>
         <div class="spell-cycle-outer">
-            <div class="spell-display">
-                <img src="../assets/images/nodeRed.png" alt="Icon">
-                <div class="spell-name" style="font-size: 0.75em">Fanatic Mask</div>
-            </div>
+            <n-red class="spell-display small"> Fanatic Mask </n-red>
             <div class="spell-in-between">></div>
-            <div class="spell-display">
-                <img src="../assets/images/nodeGreenShaman.png" alt="Icon">
-                <div class="spell-name">Totem</div>
-            </div>
+            <ng-sh class="spell-display"> Totem </ng-sh>
             <div class="spell-in-between" style="padding-left: 0.75rem">Until</div>
             <div class="spell-in-between">></div>
-            <div class="spell-display">
-                <img src="../assets/images/nodeRed.png" alt="Icon">
-                <div class="spell-name">Awakened</div>
-            </div>
+            <n-red class="spell-display"> Awakened </n-red>
         </div>
         <div class="guide-subheading">- During Awakened -</div>
         <div class="spell-cycle-outer">
-            <div class="spell-display">
-                <img src="../assets/images/nodeGreenShaman.png" alt="Icon">
-                <div class="spell-name">Totem</div>
-            </div>
+            <ng-sh class="spell-display"> Totem </ng-sh>
             <div class="spell-in-between">x4-5</div>
             <div class="spell-in-between">></div>
-            <div class="spell-display">
-                <img src="../assets/images/nodeGreenShaman.png" alt="Icon">
-                <div class="spell-name">Aura</div>
-            </div>
+            <ng-sh class="spell-display"> Aura </ng-sh>
         </div>
         <div class="guide-subheading">- Refresh Chants -</div>
         <div class="spell-cycle-outer">
-            <div class="spell-display">
-                <img src="../assets/images/nodeRed.png" alt="Icon">
-                <div class="spell-name" style="font-size: 0.75em">Heretic Mask</div>
-            </div>
+            <n-red class="spell-display small"> Heretic Mask </n-red>
             <div class="spell-in-between">></div>
-            <div class="spell-display">
-                <img src="../assets/images/nodeRed.png" alt="Icon">
-                <div class="spell-name" style="font-size: 0.75em">Lunatic Mask</div>
-            </div>
+            <n-red class="spell-display small"> Lunatic Mask </n-red>
             <div class="spell-in-between">></div>
-            <div class="spell-display">
-                <img src="../assets/images/nodeRed.png" alt="Icon">
-                <div class="spell-name" style="font-size: 0.75em">Fanatic Mask</div>
-            </div>
+            <n-red class="spell-display small"> Fanatic Mask </n-red>
         </div>
-
-
 
         <div style="padding: 0.5rem"></div>
 
         <!-- Abilities -->
         <div class="abilities-outer">
             <div class="ability">
-                <div class="ability-icon">
-                    <img src="../assets/images/nodeRed.png" alt="Icon">
-                    <b class="ability-name">Awakened</b>
-                </div>
-                <div class="ability-description" style="width: 26rem; font-size: 0.4rem">
-                    You want to build up
-                    <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Awakened</b> by spamming
-                    <img src="../assets/images/nodeGreenShaman.png" alt="Icon"> <b>Totem</b> when you have
-                    <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Mask of the Fanatic</b>
+                <n-red class="ability-icon"><div class="ability-icon-text">Awakened</div></n-red>
+                <div class="ability-description">
+                    You want to build up <n-red><b> Awakened</b></n-red> by spamming
+                    <ng-sh><b> Totem</b></ng-sh> when you have <n-red><b> Mask of the Fanatic</b></n-red>
                     (Using high <b>+Totem</b> Cost item like <b>Lower</b>). During
-                    <img src="../assets/images/nodeRed.png" alt="Icon">  <b>Awakened</b>, you also want to have
-                    <img src="../assets/images/nodeRed.png" alt="Icon">  <b>Mask of the Fanatic</b> on to activate
-                    <img src="../assets/images/nodeBlue.png" alt="Icon">  <b>Totemic Shatter</b>.
+                    <n-red><b> Awakened</b></n-red>, you also want to have
+                    <n-red><b> Mask of the Fanatic</b></n-red> on to activate <n-blue><b> Totemic Shatter</b></n-blue>.
+                </div>
+            </div>
+            <div class="ability-inner-double">
+                <div class="ability">
+                    <n-red class="ability-icon"><div class="ability-icon-text">Mystic Masks</div></n-red>
+                    <div class="ability-description">
+                        Most of the time you would want to be on <n-red><b> Awakened</b></n-red> to activate <n-blue><b> Totemic Shatter</b></n-blue>.
+                    </div>
+                </div>
+                <div class="ability">
+                    <n-red class="ability-icon"><div class="ability-icon-text">Tribal Chants</div></n-red>
+                    <div class="ability-description">
+                        This node gives significant buffs to yourself and your teammates, make sure to refresh these buffs on cooldown.
+                    </div>
+                </div>
+            </div>
+            <div class="ability-inner-double">
+                <div class="ability">
+                    <n-pink class="ability-icon"><div class="ability-icon-text">Exploding Puppets</div></n-pink>
+                    <div class="ability-description">
+                        This interacts with the <b>Strings of Fate</b> Major Id, which triggers this node instantly when the
+                        <n-red><b> Puppets</b></n-red> spawn.
+                    </div>
+                </div>
+                <div class="ability">
+                    <n-blue class="ability-icon"><div class="ability-icon-text">Totemic Shatter</div></n-blue>
+                    <div class="ability-description">
+                        <ng-sh><b> Totem</b></ng-sh>instantly activates all it's effects, including summoning
+                        <n-red><b> Puppets</b></n-red> , Healing, and Damage. Must have <n-red><b> Awakened</b></n-red>.
+                    </div>
                 </div>
             </div>
             <div class="ability">
-                <div class="ability-icon">
-                    <img src="../assets/images/nodeRed.png" alt="Icon">
-                    <b class="ability-name">Mystic Masks</b>
-                </div>
-                <div class="ability-description" style="width: 10.89rem; font-size: 0.4rem">
-                    Most of the time you would want to be on
-                    <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Mask of the Fanatic</b> to activate
-                    <img src="../assets/images/nodeBlue.png" alt="Icon"> <b>Totemic Shatter</b>.
-                </div>
-            </div>
-            <div class="ability">
-                <div class="ability-icon">
-                    <img src="../assets/images/nodeRed.png" alt="Icon">
-                    <b class="ability-name" style="font-size: 0.35em">Tribal Chants</b>
-                </div>
-                <div class="ability-description" style="width: 10.89rem; font-size: 0.4rem">
-                    This node gives significant buffs to yourself and your teammates, make sure to refresh these buffs on cooldown.
-                </div>
-            </div>
-            <div class="ability">
-                <div class="ability-icon">
-                    <img src="../assets/images/nodePink.png" alt="Icon">
-                    <b class="ability-name" style="font-size: 0.3em">Exploding Puppets</b>
-                </div>
-                <div class="ability-description" style="width: 10.89rem; font-size: 0.4rem">
-                    This interacts with the <b>Strings of Fate</b> Major Id, which triggers this node instantly when the
-                    <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Puppets</b> spawn.
-                </div>
-            </div>
-            <div class="ability">
-                <div class="ability-icon">
-                    <img src="../assets/images/nodeBlue.png" alt="Icon">
-                    <b class="ability-name" style="font-size: 0.3em">Totemic Shatter</b>
-                </div>
-                <div class="ability-description" style="width: 10.89rem; font-size: 0.4rem">
-                    <img src="../assets/images/nodeGreenShaman.png" alt="Icon"> <b>Totem</b> instantly activates all it's effects, including summoning
-                    <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Puppets</b>, Healing, and Damage. Must have
-                    <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Mask of the Fanatic</b>.
-                </div>
-            </div>
-            <div class="ability">
-                <div class="ability-icon">
-                    <img src="../assets/images/nodeBlue.png" alt="Icon">
-                    <b class="ability-name">Haunting Memory</b>
-                </div>
-                <div class="ability-description" style="width: 26rem; font-size: 0.5rem">
+                <n-blue class="ability-icon"><div class="ability-icon-text">Haunting Memory</div></n-blue>
+                <div class="ability-description large">
                     Throws your previous mask when switching giving the enemy a debuff, very good support for teammates.
                 </div>
             </div>
@@ -179,11 +134,10 @@
             <div class="aspect">
                 <img class="aspect-icon" src="../assets/images/aspectAssassin.png" alt="Icon">
                 <div class="aspect-name">
-                    <b style="color: #9400FF">Ritualist' Embodiment of the Ancestral Avatar</b>
+                    <b style="color: #9400FF; font-size: 0.95em"> Ritualist's Embodiment of the Ancestral Avatar</b>
                     <div class="aspect-description">
-                        Allows you to activate
-                        <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Awakened</b> faster, and you can sustain
-                        <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Awakened</b> state for longer.
+                        Allows you to activate <n-red><b> Awakened</b></n-red> faster, and you can sustain
+                        <n-red><b> Awakened</b></n-red> state for longer.
                     </div>
                 </div>
             </div>
@@ -192,8 +146,7 @@
                 <div class="aspect-name">
                     <b style="color: #FF0034">Aspect of Stances</b>
                     <div class="aspect-description">
-                        Buffs all the effects of
-                        <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Mystic Masks</b>.
+                        Buffs all the effects of <n-red><b> Mystic Masks</b></n-red>.
                     </div>
                 </div>
             </div>
@@ -202,7 +155,7 @@
                 <div class="aspect-name">
                     <b style="color: #FF0034">Aspect of Beckoned Legion</b>
                     <div class="aspect-description">
-                        <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Puppet Master</b> gains more Puppets. Increasing the damage potential.
+                        <n-red><b> Puppet Master</b></n-red> gains more Puppets. Increasing the damage potential.
                     </div>
                 </div>
             </div>
@@ -211,8 +164,7 @@
                 <div class="aspect-name">
                     <b style="color: #FF0034">Aspect of the Channeler</b>
                     <div class="aspect-description">
-                        Makes it easier to buff teammates with the larger
-                        <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Tribal Chants</b> range. Good QOL
+                        Makes it easier to buff teammates with the larger <n-red><b> Tribal Chants</b></n-red> range. Good QOL
                     </div>
                 </div>
             </div>
@@ -221,9 +173,7 @@
                 <div class="aspect-name">
                     <b style="color: #00F6FF">Aspect of Acceleration</b>
                     <div class="aspect-description">
-                        Allows
-                        <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Puppets</b> and
-                        <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Effigies</b> to move faster. Good QOL
+                        Allows <n-red><b> Puppets</b></n-red> and <n-red><b> Effigies</b></n-red> to move faster. Good QOL
                     </div>
                 </div>
             </div>

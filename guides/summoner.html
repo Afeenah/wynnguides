@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="guide.css">
     <script src="../analytics.js"></script>
     <script src="./guide.js"></script>
+    <script src="./icons.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Summoner Guide</title>
 </head>
@@ -26,27 +27,15 @@
         <!-- Spell Cycles -->
         <div class="guide-subheading">- Basic Cycle -</div>
         <div class="spell-cycle-outer">
-            <div class="spell-display">
-                <img src="../assets/images/nodeGreenShaman.png" alt="Icon">
-                <div class="spell-name">Haul</div>
-            </div>
+            <ng-sh class="spell-display"> Haul </ng-sh>
             <div class="spell-in-between">></div>
-            <div class="spell-display">
-                <img src="../assets/images/nodeGreenShaman.png" alt="Icon">
-                <div class="spell-name">Aura</div>
-            </div>
+            <ng-sh class="spell-display"> Aura </ng-sh>
         </div>
         <div class="guide-subheading">- Aura Spam Cycle -</div>
         <div class="spell-cycle-outer">
-            <div class="spell-display">
-                <img src="../assets/images/nodeGreenShaman.png" alt="Icon">
-                <div class="spell-name">Totem</div>
-            </div>
+            <ng-sh class="spell-display"> Haul </ng-sh>
             <div class="spell-in-between">></div>
-            <div class="spell-display">
-                <img src="../assets/images/nodeGreenShaman.png" alt="Icon">
-                <div class="spell-name">Aura</div>
-            </div>
+            <ng-sh class="spell-display"> Aura </ng-sh>
             <div class="spell-in-between">x4-7</div>
         </div>
 
@@ -55,52 +44,41 @@
 
         <!-- Abilities -->
         <div class="abilities-outer">
-            <div class="ability">
-                <div class="ability-icon">
-                    <img src="../assets/images/nodeGreenShaman.png" alt="Icon">
-                    <b class="ability-name" style="font-size: 0.3em">Totem</b>
+            <div class="ability-inner-double">
+                <div class="ability">
+                    <ng-sh class="ability-icon"><div class="ability-icon-text">Totem</div></ng-sh>
+                    <div class="ability-description">
+                        Use this when you need to reposition your <ng-sh><b> Totem</b></ng-sh>. Can replace
+                        <ng-sh><b> Haul</b></ng-sh>. in the cycle
+                    </div>
                 </div>
-                <div class="ability-description" style="width: 10.89rem; font-size: 0.4rem">
-                    Use this when you need to reposition your
-                    <img src="../assets/images/nodeGreenShaman.png" alt="Icon"> <b>Totem</b>. Can replace
-                    <img src="../assets/images/nodeGreenShaman.png" alt="Icon"> <b>Haul</b> in the cycle
+                <div class="ability">
+                    <n-blue class="ability-icon"><div class="ability-icon-text">Bullwhip</div></n-blue>
+                    <div class="ability-description large">
+                        This is used to swap between minion targeting and provides a huge damage bonus.
+                    </div>
+                </div>
+            </div>
+            <div class="ability-inner-double">
+                <div class="ability">
+                    <n-red class="ability-icon"><div class="ability-icon-text">Commander</div></n-red>
+                    <div class="ability-description">
+                        When casting
+                        <b>[SHIFT] + <ng-sh>Aura</ng-sh>.</b> when commander is available will make your minions less dumb.
+                    </div>
+                </div>
+                <div class="ability">
+                    <n-red class="ability-icon"><div class="ability-icon-text small">Humming-birds</div></n-red>
+                    <div class="ability-description small">
+                        These birds can be released using
+                        <b>[SHIFT] + <ng-sh> Haul</ng-sh>.</b>, they deal significant amounts of damage, but you lose the
+                        <b>Jump Height & Speed Boost</b> they provide.
+                    </div>
                 </div>
             </div>
             <div class="ability">
-                <div class="ability-icon">
-                    <img src="../assets/images/nodeBlue.png" alt="Icon">
-                    <b class="ability-name" style="font-size: 0.3em">Bullwhip</b>
-                </div>
-                <div class="ability-description" style="width: 10.89rem; font-size: 0.4rem">
-                    This is used to swap between minion targeting and provides a huge damage bonus.
-                </div>
-            </div>
-            <div class="ability">
-                <div class="ability-icon">
-                    <img src="../assets/images/nodeRed.png" alt="Icon">
-                    <b class="ability-name" style="font-size: 0.3rem">Commander</b>
-                </div>
-                <div class="ability-description" style="width: 26rem; font-size: 0.5rem">
-                    When casting
-                    <b>[SHIFT] + <img src="../assets/images/nodeGreenShaman.png" alt="Icon"> Aura</b> when commander is avaliable will make your minions less dumb.
-                </div>
-            </div>
-            <div class="ability">
-                <div class="ability-icon">
-                    <img src="../assets/images/nodeRed.png" alt="Icon">
-                    <b class="ability-name" style="font-size: 0.3rem">Hummingbirds</b>
-                </div>
-                <div class="ability-description" style="width: 26rem; font-size: 0.5rem">
-                    These birds can be released using
-                    <b>[SHIFT] + <img src="../assets/images/nodeGreenShaman.png" alt="Icon"> Haul</b>, they deal significant amounts of damage but you lose the <b>Jump Height & Speed Boost</b> they provide.
-                </div>
-            </div>
-            <div class="ability">
-                <div class="ability-icon">
-                    <img src="../assets/images/ultimateSummoner.png" alt="Icon">
-                    <b class="ability-name" style="width: 11em; font-size: 0.35rem">Patchwork Abomination</b>
-                </div>
-                <div class="ability-description" style="width: 26rem; font-size: 0.5rem">
+                <ut-su class="ability-icon"><div class="ability-icon-text">Patchwork Abomination</div></ut-su>
+                <div class="ability-description large">
                     This ultimate summons the Patchwork Abomination that doubles your DPS use wisely.
                 </div>
             </div>
@@ -156,9 +134,8 @@
                 <div class="aspect-name">
                     <b style="color: #9400FF; font-size: 0.85em">Summoner's Embodiment of the Omnipotent Overseer</b>
                     <div class="aspect-description">
-                        Gives you more
-                        <b>+1 <img src="../assets/images/nodeRed.png" alt="Icon"> Totem</b> and at higher tiers it gives you an additional
-                        <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Hummingbird</b>, overall Dps increase.
+                        Gives you <b>+1 <ng-sh> Totem</ng-sh></b>, and at higher tiers it gives you an additional
+                        <n-red><b> Hummingbirds</b></n-red>, overall Dps increase.
                     </div>
                 </div>
             </div>
@@ -167,7 +144,7 @@
                 <div class="aspect-name">
                     <b style="color: #FF0034">Aspect of Beckoned Legion</b>
                     <div class="aspect-description">
-                        <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Puppet Master</b> gains more Puppets. Increasing the damage potential.
+                        <n-red><b> Puppet Master</b></n-red> gains more Puppets. Increasing the damage potential.
                     </div>
                 </div>
             </div>
@@ -176,8 +153,7 @@
                 <div class="aspect-name">
                     <b style="color: #FF0034">Aspect of Occupation</b>
                     <div class="aspect-description">
-                        Increases the range of
-                        <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Hummingbirds</b>. Good QOL
+                        Increases the range of <n-red><b> Hummingbirds</b></n-red>. Good QOL.
                     </div>
                 </div>
             </div>
@@ -186,7 +162,7 @@
                 <div class="aspect-name">
                     <b style="color: #FF0034">Aspect of Motivation</b>
                     <div class="aspect-description">
-                        <img src="../assets/images/nodeBlue.png" alt="Icon">  <b>Bullwhip</b> gains + Damage, high damage increase
+                        <n-blue><b> Bullwhip</b></n-blue> gains + Damage, high damage increase
                     </div>
                 </div>
             </div>
@@ -195,9 +171,7 @@
                 <div class="aspect-name">
                     <b style="color: #00F6FF">Aspect of Acceleration</b>
                     <div class="aspect-description">
-                        Allows
-                        <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Puppets</b> and
-                        <img src="../assets/images/nodeRed.png" alt="Icon"> <b>Effigies</b> to move faster. Good QOL
+                        Allows <n-red><b> Puppets</b></n-red> and <n-red><b> Effigies</b></n-red> to move faster. Good QOL
                     </div>
                 </div>
             </div>
