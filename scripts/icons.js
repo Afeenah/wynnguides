@@ -20,6 +20,7 @@ createIcon('ng-wa', 'nodeGreenWarrior.png')
 
 createIcon('ut-ac', 'ultimateAcrobat.png')
 createIcon('ut-su', 'ultimateSummoner.png')
+createIcon('ut-sh', 'ultimateShadestepper.png')
 
 createIcon('as-as', 'aspectAssassin.png')
 createIcon('as-sh', 'aspectShaman.png')
