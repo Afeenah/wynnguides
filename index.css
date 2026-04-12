@@ -8,9 +8,18 @@
     font-family: 'Minecraft';
     src: url("./assets/fonts/MinecraftStandard.otf") format("opentype");
 }
+@font-face {
+    font-family: 'Minecraft';
+    src: url("./assets/fonts/MinecraftStandardBold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
 
 body {
     background: #000;
+    font-family: 'Minecraft', sans-serif;
+    color: white;
 }
 
 .selection-container {
