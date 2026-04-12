@@ -27,18 +27,16 @@ body {
 
 .guide-outer {
     display: inline-flex;
-    flex-direction: column;
     justify-content: center;
     background-color: #1e1e1e;
     margin: 0 auto;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    body {
+        background-color: red !important;
+    }
     .guide-outer {
-        display: inline-flex;
         flex-direction: column;
-        justify-content: center;
-        background-color: #1e1e1e;
-        margin: 0 auto;
         gap: 3rem;
     }
 }
