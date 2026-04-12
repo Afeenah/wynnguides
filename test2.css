@@ -16,6 +16,7 @@ body {
     background-color: #000000;
     font-family: 'Minecraft', sans-serif;
     color: white;
+    align-self: center;
 }
 
 
@@ -28,7 +29,7 @@ body {
 .archetype-card {
     display: flex;
     flex-direction: column;
-    max-width: 33vw;
+    max-width: 33rem;
 }
 .archetype-card-img{
     object-fit: cover;
@@ -56,8 +57,8 @@ body {
     align-items: center;
     justify-content: center;
     width: fit-content;
-    min-width: 34vw;
-    max-width: 34vw; /* change this for entire section */
+    min-width: 34rem;
+    max-width: 34rem; /* change this for entire section */
 }
 .guide-heading {
     font-size: 1.25rem;
