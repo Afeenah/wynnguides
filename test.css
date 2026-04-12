@@ -29,8 +29,8 @@ body {
 .archetype-card {
     display: flex;
     flex-direction: column;
-    min-width: 33rem;
-    max-width: 33rem; /* Adjust This*/
+    min-width: 50%;
+    max-width: 50%; /* Adjust This*/
     text-align: center;
 }
 .archetype-card img {
