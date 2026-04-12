@@ -22,26 +22,26 @@ body {
 .guide-outer {
     display: flex;
     background-color: #1e1e1e;
-    max-width: 100vw;
+    max-width: 100rem;
 }
 
 
 .archetype-card {
     display: flex;
     flex-direction: column;
-    max-width: 33vw;
+    max-width: 33rem;
 }
 .archetype-card-img{
     object-fit: cover;
-    object-position: -2vw;
-    width: 40vw;
-    height: 40vw;
+    object-position: -2rem;
+    width: 40rem;
+    height: 40rem;
     align-self: center;
 }
 .archetype-card-title {
-    padding-top: 1.25vw;
+    padding-top: 1.25rem;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     color: white;
 }
 .archetype-card-title img{
@@ -55,16 +55,16 @@ body {
     display: flex;
     flex-direction: column;
     width: fit-content;
-    min-width: 34vw;
-    max-width: 34vw; /* change this for entire section */
+    min-width: 34rem;
+    max-width: 34rem; /* change this for entire section */
 
 }
 .guide-heading {
-    font-size: 1.25vw;
+    font-size: 1.25rem;
     text-align: center;
 }
 .guide-subheading {
-    font-size: 1vw;
+    font-size: 1rem;
     text-align: center;
     padding-top: 0.75em;
     padding-bottom: 0.5em;
@@ -75,7 +75,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.5vw; /* Change this for size */
+    font-size: 0.5rem; /* Change this for size */
 }
 .spell-display {
     text-align: center;
@@ -102,11 +102,11 @@ body {
 }
 .ability {
     display: inline-flex;
-    font-size: 1vw; /* Change this */
+    font-size: 1rem; /* Change this */
     background-color: #1e1e1e;
-    padding-top: 0.25vw;
-    padding-left: 0.25vw;
-    padding-right: 0.25vw;
+    padding-top: 0.25rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
 }
 .ability-icon {
     display: flex;
