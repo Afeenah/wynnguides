@@ -1,15 +1,19 @@
-function fitToScreen() {
-    const wrapper = document.querySelector('.guide-outer');
-    if (!wrapper) return;
+function scaleToFit() {
+    const body = document.body;
+    const content = document.querySelector('.guide-outer');
+    if (!content) return;
 
-    const scale = Math.min(
-        1,
-        window.innerWidth / wrapper.scrollWidth
-    );
+    const contentWidth = content.scrollWidth;
+    const windowWidth = window.innerWidth;
 
-    const newFontSize = 16 * scale;
-    document.documentElement.style.fontSize = Math.max(newFontSize, 10) + 'px';
+    if (contentWidth > windowWidth) {
+        const scale = windowWidth / contentWidth;
+        body.style.transformOrigin = 'top center';
+        body.style.transform = `scale(${scale})`;
+        body.style.width = `${contentWidth}px`;
+        body.style.margin = '0 auto';
+    }
 }
 
-window.addEventListener('load', fitToScreen);
-window.addEventListener('resize', fitToScreen);
+window.addEventListener('load', scaleToFit);
+window.addEventListener('resize', scaleToFit);
