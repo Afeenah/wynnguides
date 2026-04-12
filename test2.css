@@ -22,14 +22,13 @@ body {
 .guide-outer {
     display: flex;
     background-color: #1e1e1e;
-    max-width: 100rem;
 }
 
 
 .archetype-card {
     display: flex;
     flex-direction: column;
-    max-width: 33rem;
+    max-width: 33vw;
 }
 .archetype-card-img{
     object-fit: cover;
@@ -55,8 +54,8 @@ body {
     display: flex;
     flex-direction: column;
     width: fit-content;
-    min-width: 34rem;
-    max-width: 34rem; /* change this for entire section */
+    min-width: 34vw;
+    max-width: 34vw; /* change this for entire section */
 
 }
 .guide-heading {
@@ -114,7 +113,6 @@ body {
     text-align: center;
 }
 .ability-icon img {
-    width: 3em !important; /* Don't touch */
     height: 3em !important; /* Don't touch */
     align-self: center;
 }
