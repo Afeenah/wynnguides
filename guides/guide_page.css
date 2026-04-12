@@ -26,7 +26,7 @@ body {
 
 
 .guide-outer {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     background-color: #1e1e1e;
     margin: 0 auto;
@@ -163,7 +163,10 @@ body {
     padding-left: 0.5rem;
     font-size: 0.85em;
     text-align: center;
-}
+}.aspect-description img {
+     height: 2em !important;
+     vertical-align: bottom;
+ }
 
 
 .weapons {
