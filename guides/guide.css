@@ -223,7 +223,6 @@ body {
 .weapon-label {
     height: 1em !important;
     position: absolute;
-    background-color: #131313;
     padding: 0.2em 0.2em;
     bottom: 0;
     right: 0;
@@ -236,6 +235,153 @@ body {
 }
 
 
+
+/* Mobile Compatibility */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .guide-outer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0.5rem;
+        gap: 5rem;
+    }
+
+    .archetype-card {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .archetype-card-img {
+        width: 80vw;
+        height: 80vw;
+        object-position: center;
+    }
+
+    .archetype-card-title {
+        font-size: 1rem;
+    }
+
+    .guide-column {
+        min-width: auto;
+        max-width: 100%;
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .guide-heading {
+        font-size: 1rem;
+    }
+
+    .guide-subheading {
+        font-size: 0.9rem;
+    }
+
+    .spell-cycle-outer {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        font-size: 0.4rem;
+    }
+
+    .spell-display img {
+        height: 2.5rem !important;
+    }
+
+    .spell-in-between {
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+    }
+
+    .abilities-outer {
+        max-width: 100%;
+    }
+
+    .ability-inner-double {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .ability {
+        padding: 0.5rem;
+        align-self: flex-start;
+    }
+
+    .ability-icon-text {
+        width: 8em;
+        font-size: 0.35em;
+    }
+
+    .ability-description {
+        padding-left: 0.5rem;
+        margin-top: 0.25rem;
+    }
+
+    .aspect {
+        flex-direction: row;
+        align-items: center;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .aspect-icon {
+        margin-bottom: 0.5rem;
+    }
+
+    .aspect-description {
+        padding-left: 0;
+    }
+
+    .weapons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .weapon-icon {
+        width: 3em;
+        height: 3em;
+    }
+
+    .weapon-name {
+        font-size: 0.4em;
+    }
+}
+
+@media (max-width: 480px) {
+    .guide-outer {
+        padding: 0.25rem;
+    }
+
+    .archetype-card-img {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .spell-display img {
+        height: 2rem !important;
+    }
+
+    .ability-icon img {
+        height: 2.5em !important;
+    }
+
+    .ability-icon-text {
+        width: 6em;
+        font-size: 0.3em;
+    }
+
+    .ability-description {
+        font-size: 0.35em;
+    }
+
+    .spell-cycle-outer {
+        font-size: 0.35rem;
+    }
+}
 
 
 
