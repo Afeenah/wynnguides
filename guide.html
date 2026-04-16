@@ -46,10 +46,14 @@
         guide.aspectsHTML()
 
         setTimeout(() => {
-            document.querySelectorAll('.weapon-name').forEach(adjustFontSize);
-            document.querySelectorAll('.spell-display text').forEach(adjustFontSize);
-            document.querySelectorAll('.ability-icon-text').forEach(adjustFontSize);
-        }, 50);
+            requestAnimationFrame(() => {
+                document.querySelectorAll('.weapon-name').forEach(adjustFontSize);
+                document.querySelectorAll('.spell-display text').forEach(adjustFontSize);
+                document.querySelectorAll('.ability-icon-text').forEach(adjustFontSize);
+            });
+        }, 150);
+    }).catch(reason => {
+        console.log("Could not find image:" + reason)
     })
 </script>
 </html>

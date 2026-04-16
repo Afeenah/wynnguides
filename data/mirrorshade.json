@@ -13,7 +13,7 @@
         {"spell": "Vanish: node-blue"},
         {"space": ">"},
         {"spell": "Spin-Attack: node-assassin"},
-        {"space": " "},
+        {"space": "+"},
         {"spell": "Bamboozle: node-blue"},
         {"space": "x6"}
       ]
@@ -26,7 +26,7 @@
         {"spell": "Vanish: node-blue"},
         {"space": ">"},
         {"spell": "Bamboozle: node-blue"},
-        {"space": " "},
+        {"space": "+"},
         {"spell": "Spin-Attack: node-assassin"},
         {"space": "x5"},
         {"space": ">"},
