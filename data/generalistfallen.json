@@ -76,7 +76,7 @@
   "weapons": {
     "recommended": [
       {"name": "Bloodbath", "rarity": "mythic", "type": "recommended"},
-      {"name": "Idol", "rarity": "mythic"}
+      {"name": "Hero", "rarity": "mythic"}
     ],
     "budget": [
 

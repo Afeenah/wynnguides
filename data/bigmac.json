@@ -70,7 +70,8 @@
 
   "weapons": {
     "recommended": [
-      {"name": "Guardian", "rarity": "mythic", "type": "recommended"}
+      {"name": "Guardian", "rarity": "mythic", "type": "recommended"},
+      {"name": "Ascendancy", "rarity": "mythic"}
     ],
     "budget": [
 

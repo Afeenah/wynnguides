@@ -62,6 +62,7 @@
     "recommended": [
       {"name": "Olympic", "rarity": "mythic", "type": "recommended"},
       {"name": "Hadal", "rarity": "mythic", "type": "expert"},
+      {"name": "Immolation", "rarity": "mythic", "type": "comfy"},
       {"name": "Panic Zealot", "rarity": "fabled"}
     ],
     "budget": [

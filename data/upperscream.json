@@ -63,7 +63,7 @@
       {"name": "Hero", "rarity": "mythic", "type": "recommended"},
       {"name": "Alkatraz", "rarity": "mythic", "type": "expert"},
       {"name": "Thrundacrack", "rarity": "mythic", "type": "expert"},
-      {"name": "Idol", "rarity": "mythic"}
+      {"name": "Restitution", "rarity": "mythic", "type":  "gimmick"}
     ],
     "budget": [
 

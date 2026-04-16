@@ -59,10 +59,11 @@
 
   "weapons": {
     "recommended": [
-      {"name": "Convergence", "rarity": "mythic", "type": "recommended"},
-      {"name": "Bloodbath", "rarity": "mythic", "type": "expert"},
       {"name": "Thrundacrack", "rarity": "mythic", "type": "expert"},
-      {"name": "Restitution", "rarity": "mythic"}
+      {"name": "Bloodbath", "rarity": "mythic", "type": "expert"},
+      {"name": "Restitution", "rarity": "mythic", "type":  "gimmick"},
+      {"name": "Convergence", "rarity": "mythic"},
+      {"name": "Collapse", "rarity": "mythic"}
     ],
     "budget": [
     ]

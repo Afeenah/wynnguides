@@ -64,6 +64,7 @@
       {"name": "Divzer", "rarity": "mythic", "type": "expert"},
       {"name": "Freedom", "rarity": "mythic", "type": "comfy"},
       {"name": "Spring", "rarity": "mythic"},
+      {"name": "Eschaton", "rarity": "mythic"},
       {"name": "Grandmother", "rarity": "mythic"}
     ],
     "budget": [

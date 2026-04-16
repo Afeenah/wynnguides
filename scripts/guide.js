@@ -31,6 +31,9 @@ function addListeners() {
                 case 'icon-comfy':
                     description = 'Comfortable to Play';
                     break;
+                case 'icon-gimmick':
+                    description = 'Has a Major Identification or anything that changes something about the kit.';
+                    break;
                 default:
                     description = 'Solid';
                     break;

@@ -75,7 +75,8 @@
       {"name": "Trance", "rarity": "mythic", "type": "recommended"},
       {"name": "Fatal", "rarity": "mythic", "type": "expert"},
       {"name": "Monster", "rarity": "mythic", "type": "comfy"},
-      {"name": "Warp", "rarity": "mythic"}
+      {"name": "Warp", "rarity": "mythic"},
+      {"name": "Quetzalcoatl", "rarity": "mythic"}
     ],
     "budget": [
     ]
