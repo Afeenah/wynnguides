@@ -1,0 +1,111 @@
+{
+  "clazz": "Shaman",
+  "name": "Puppet Bomber",
+  "icon": "puppetbomber",
+  "authors": ["Afeena"],
+
+  "spellCycles": [
+    {
+      "name": "Setup",
+      "cycle": [
+        {"spell": "Fanatic Mask: node-red"},
+        {"space": ">"},
+        {"spell": "Totem: node-shaman"},
+        {"space": "Until"},
+        {"space": ">"},
+        {"spell": "Awakened: node-red"}
+      ]
+    },
+    {
+      "name": "During Awakened",
+      "cycle": [
+        {"spell": "Totem: node-shaman"},
+        {"space": "x4-5"},
+        {"space": ">"},
+        {"spell": "Aura: node-shaman"}
+      ]
+    },
+    {
+      "name": "Refresh Chants",
+      "cycle": [
+        {"spell": "Heretic Mask: node-red"},
+        {"space": ">"},
+        {"spell": "Lunatic Mask: node-red"},
+        {"space": ">"},
+        {"spell": "Fanatic Mask: node-red"}
+      ]
+    }
+  ],
+
+
+  "abilities": [
+    {
+      "icon": "node-red",
+      "name": "Awakened",
+      "description": "You want to build up @node-red #Awakened# by spamming @node-shaman #Totem# when you have @node-red #Mask of the Fanatic# (Using high #+Totem# Cost item like #Lower#). During @node-red #Awakened#, you also want to have @node-red #Mask of the Fanatic# on to activate @node-blue #Totemic Shatter#."
+    },
+    [
+      {
+        "icon": "node-red",
+        "name": "Mystic Masks",
+        "description": "Most of the time you would want to be on @node-red #Awakened# to activate @node-blue #Totemic Shatter#."
+      },
+      {
+        "icon": "node-red",
+        "name": "Tribal Chants",
+        "description": "This node gives significant buffs to yourself and your teammates, make sure to refresh these buffs on cooldown."
+      }
+    ],
+    [
+      {
+        "icon": "node-pink",
+        "name": "Exploding Puppets",
+        "description": "This interacts with the #Strings of Fate# Major Id, which triggers this node instantly when the @node-red #Puppets# spawn."
+      },
+      {
+        "icon": "node-blue",
+        "name": "Totemic Shatter",
+        "description": "@node-shaman #Totem# instantly activates all its effects, including summoning @node-red #Puppets#, Healing, and Damage. Must have @node-red #Awakened#."
+      }
+    ]
+  ],
+
+
+  "weapons": {
+    "recommended": [
+      {"name": "Hadal", "rarity": "mythic", "type": "recommended"}
+    ],
+    "budget": [
+      {"name": "Marionette", "rarity": "fabled"}
+    ]
+  },
+
+
+  "aspects": [
+    {
+      "rarity": "mythic",
+      "name": "Ritualist's Embodiment of the Ancestral Avatar",
+      "description": "Allows you to activate @node-red Awakened faster, and you can sustain @node-red Awakened state for longer."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of Stances",
+      "description": "Buffs all the effects of @node-red Mystic Masks."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of Beckoned Legion",
+      "description": "@node-red Puppet Master gains more Puppets. Increasing the damage potential."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of Channeler",
+      "description": "Makes it easier to buff teammates with the larger @node-red Tribal Chants range. Good QOL"
+    },
+    {
+      "rarity": "legendary",
+      "name": "Aspect of Acceleration",
+      "description": "Allows @node-red Puppets and @node-red Effigies to move faster. Good QOL!"
+    }
+  ]
+}

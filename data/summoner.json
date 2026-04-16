@@ -1,0 +1,101 @@
+{
+  "clazz": "shaman",
+  "name": "Summoner",
+  "icon": "summoner",
+  "authors": ["Afeena"],
+
+  "spellCycles": [
+    {
+      "name": "Basic Cycle",
+      "cycle": [
+        {"spell": "Haul: node-shaman"},
+        {"space": ">"},
+        {"spell": "Aura: node-shaman"}
+      ]
+    },
+    {
+      "name": "Aura Spam Cycle",
+      "cycle": [
+        {"spell": "Haul: node-shaman"},
+        {"space": ">"},
+        {"spell": "Aura: node-shaman"},
+        {"space": "x4-7"}
+      ]
+    }
+  ],
+
+
+  "abilities": [
+    [
+      {
+        "icon": "node-shaman",
+        "name": "Totem",
+        "description": "Use this when you need to reposition your @node-shaman #Totem#. Can replace @node-shaman #Haul# in the cycle."
+      },
+      {
+        "icon": "node-blue",
+        "name": "Bullwhip",
+        "description": "This is used to swap between minion targeting and provides a huge damage bonus."
+      }
+    ],
+    [
+      {
+        "icon": "node-red",
+        "name": "Commander",
+        "description": "When casting #[SHIFT]# + @node-shaman #Aura# when commander is available will make your minions less dumb."
+      },
+      {
+        "icon": "node-red",
+        "name": "Humming-birds",
+        "description": "These birds can be released using #[SHIFT]# + @node-shaman #Haul#, they deal significant amounts of damage, but you lose the #Jump Height & Speed Boost# they provide."
+      }
+    ],
+    {
+      "icon": "ultimate-summoner",
+      "name": "Patchwork Abomination",
+      "description": "This ultimate summons the Patchwork Abomination that doubles your DPS use wisely."
+    }
+  ],
+
+
+  "weapons": {
+    "recommended": [
+      {"name": "Olympic", "rarity": "mythic", "type": "recommended"},
+      {"name": "Hadal", "rarity": "mythic", "type": "expert"},
+      {"name": "Panic Zealot", "rarity": "fabled"}
+    ],
+    "budget": [
+      {"name": "Overdrive", "rarity": "legendary"},
+      {"name": "The Watched", "rarity": "legendary"}
+    ]
+  },
+
+
+  "aspects": [
+    {
+      "rarity": "mythic",
+      "name": "Summoner's Embodiment of the Omnipotent Overseer",
+      "description": "Gives you #+1# @node-shaman Totem, and at higher tiers it gives you an additional @node-red Hummingbirds, overall Dps increase."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of Beckoned Legion",
+      "description": "@node-red Puppet Master gains more Puppets. Increasing the damage potential."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of Occupation",
+      "description": "Increases the range of @node-red Hummingbirds. Good QOL."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of Motivation",
+      "description": "@node-blue Bullwhip gains + Damage, high damage increase"
+    },
+    {
+      "rarity": "legendary",
+      "name": "Aspect of Acceleration",
+      "description": "Allows @node-red Puppets and @node-red Effigies to move faster. Good QOL!"
+    }
+  ]
+}

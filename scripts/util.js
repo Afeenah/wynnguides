@@ -1,4 +1,4 @@
-const DIRECTORY = "../assets/images/"
+const DIRECTORY = "../../assets/images/"
 function getRarity(name) {
     switch (name.toLowerCase()) {
         case 'mythic':

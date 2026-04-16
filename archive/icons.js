@@ -2,37 +2,34 @@ function createIcon(tagName, fileName) {
     class Icon extends HTMLElement {
         connectedCallback() {
             let text = this.textContent;
-            this.innerHTML = `<img src="${DIRECTORY}${fileName}" alt="Icon" title="${text}">`;
+            this.innerHTML = `<img src="${DIRECTORY}${fileName}" alt="${tagName}" title="${text}">`;
         }
     }
     customElements.define(tagName, Icon);
 }
 
-createIcon('n-red', 'nodeRed.png')
-createIcon('n-pink', 'nodePink.png')
-createIcon('n-blue', 'nodeBlue.png')
-createIcon('n-yel', 'nodeYellow.png')
-createIcon('ng-as', 'nodeGreenAssassin.png')
-createIcon('ng-ar', 'nodeGreenArcher.png')
-createIcon('ng-ma', 'nodeGreenMage.png')
-createIcon('ng-sh', 'nodeGreenShaman.png')
-createIcon('ng-wa', 'nodeGreenWarrior.png')
+createIcon('n-red', 'node-red.png')
+createIcon('n-pink', 'node-pink.png')
+createIcon('n-blue', 'node-blue.png')
+createIcon('n-yel', 'node-yellow.png')
+createIcon('ng-as', 'node-assassin.png')
+createIcon('ng-ar', 'node-archer.png')
+createIcon('ng-ma', 'node-mage.png')
+createIcon('ng-sh', 'node-shaman.png')
+createIcon('ng-wa', 'node-warrior.png')
 
-createIcon('ut-ac', 'ultimateAcrobat.png')
-createIcon('ut-su', 'ultimateSummoner.png')
-createIcon('ut-sh', 'ultimateShadestepper.png')
+createIcon('ut-ac', 'ultimate-acrobat.png')
+createIcon('ut-su', 'ultimate-summoner.png')
+createIcon('ut-sh', 'ultimate-shadestepper.png')
 
-createIcon('as-as', 'aspectAssassin.png')
-createIcon('as-sh', 'aspectShaman.png')
-
-createIcon('i-eth', 'earth.png')
-createIcon('i-thn', 'thunder.png')
-createIcon('i-wtr', 'water.png')
-createIcon('i-fir', 'fire.png')
-createIcon('i-air', 'air.png')
-createIcon('i-mana', 'mana.png')
-createIcon('i-lmb', 'clickLeft.png')
-createIcon('i-rmb', 'clickRight.png')
+createIcon('i-eth', 'element-earth.png')
+createIcon('i-thn', 'element-thunder.png')
+createIcon('i-wtr', 'element-water.png')
+createIcon('i-fir', 'element-fire.png')
+createIcon('i-air', 'element-air.png')
+createIcon('i-mana', 'icon-mana.png')
+createIcon('i-lmb', 'click-left.png')
+createIcon('i-rmb', 'click-right.png')
 
 
 class WeaponItem extends HTMLElement {

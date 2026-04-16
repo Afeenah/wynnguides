@@ -1,0 +1,99 @@
+{
+  "clazz": "warrior",
+  "name": "Bash-Uppercut",
+  "icon": "fallen",
+  "authors": [""],
+
+  "spellCycles": [
+    {
+      "name": "Main Cycle",
+      "cycle":  [
+        {"spell": "Bak'al's Grasp: node-red"},
+        {"space": ">"},
+        {"spell": "Bash: node-warrior"},
+        {"space": "+"},
+        {"spell": "Uppercut: node-warrior"},
+        {"space": "x2"},
+        {"space": "Until"},
+        {"spell": "Low HP: node-warrior"},
+        {"space": ">"},
+        {"spell": "Exit Corrupt: node-red"}
+      ]
+    }
+  ],
+
+
+  "abilities": [
+    {
+      "icon": "node-red", "name": "Bak'al's Grasp",
+      "description": "When you cast @node-warrior #War Scream#, you enter @node-red #Corrupted#. You can't be #Healed# by anything during this phase. The more #HP# you lose the more #Damage# you deal."
+    },
+    {
+      "icon": "node-red", "name": "Blood Pact",
+      "description": "When you run out of @icon-mana #Mana#. Your spells will start using your #HP# instead. Be careful as if your health is too low you might have the chance of getting 1-shot."
+    },
+
+    [
+      {
+        "icon": "node-red", "name": "Enraged Blow",
+        "description": "You gain #1.5%# damage per #1% @node-red Corrupted#."
+      },
+      {
+        "icon": "node-blue", "name": "Armor Breaker",
+        "description": "When at #40% @node-red Corrupted# you will receive a #30%# damage boost on your next @node-warrior #Uppercut# for #8s# and has a cooldown of #16s#"
+      }
+    ],
+
+    [
+      {
+        "icon": "node-yellow", "name": "Intoxicating Blood",
+        "description": "Exiting @node-red #Corrupted# will give you #2.5% HP# for damage dealt and enemies killed during @node-red #Corrupted#. "
+      },
+      {
+        "icon": "node-yellow", "name": "Exhilarate",
+        "description": "Exiting @node-red #Corrupted# will heal you for #30%# of your Max HP."
+      }
+    ]
+  ],
+
+
+  "weapons": {
+    "recommended": [
+      {"name": "Convergence", "rarity": "mythic", "type": "recommended"},
+      {"name": "Bloodbath", "rarity": "mythic", "type": "expert"},
+      {"name": "Thrundacrack", "rarity": "mythic", "type": "expert"},
+      {"name": "Restitution", "rarity": "mythic"}
+    ],
+    "budget": [
+    ]
+  },
+
+
+  "aspects": [
+    {
+      "rarity": "mythic",
+      "name": "Fallen's Embodiment of Blind Fury",
+      "description": "Reduces @node-red #Blood Pact's# HP costs, almost required."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of the Berserker",
+      "description": "@node-blue #Armor Breaker# is stronger "
+    },
+    {
+      "rarity": "legendary",
+      "name": "Aspect of Deafening Echos",
+      "description": "@node-blue #Tempest# Hits Faster."
+    },
+    {
+      "rarity": "legendary",
+      "name": "Aspect of Steel Chords",
+      "description": "@node-blue #Tempest# and @node-warrior #War-Scream# gains more Range."
+    },
+    {
+      "rarity": "legendary",
+      "name": "Aspect of Skyward Strikes",
+      "description": "@node-warrior #Uppercut# gains more Range."
+    }
+  ]
+}

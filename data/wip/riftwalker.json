@@ -1,0 +1,112 @@
+{
+  "clazz": "mage",
+  "name": "Riftwalker",
+  "icon": "riftwalker",
+  "authors": [],
+
+  "spellCycles": [
+    {
+      "name": "Refresh Abilities",
+      "cycle": [
+        {"spell": "Rift-Bound: node-red"},
+        {"space": "/"},
+        {"spell": "Time Vortex: node-blue"}
+      ]
+    },
+    {
+      "name": "Damage Cycle",
+      "cycle": [
+        {"spell": "Etheric Slash: node-pink"},
+        {"space": ">"},
+        {"spell": "Meteor Shower: node-blue"},
+        {"space": ">"},
+        {"spell": "Warp Blast: node-yellow"}
+      ]
+    }
+  ],
+
+
+  "abilities": [
+
+    {
+      "icon": "node-red",
+      "name": "Dimensional Tear",
+      "description": "Hitting enemies with @node-pink #Etheric Slash# will open a rift. Increasing #Distortion# gain by #25%# and increasing your damage. Also increases @node-blue #Meteor Shower#'s count. @node-yellow #Mana Current# reduces the cost of spells by #25%# while inside the rift. You want to have #100%# uptime on this ability."
+    },
+    [{
+      "icon": "node-red",
+      "name": "Rift-Bound",
+      "description": "#[SHIFT] @node-mage Heal# casts this for #6s# with a #20s# cooldown. @node-red #Dimensional Rift# will follow you and @node-red #Distortion# stops decaying. You want to have as much uptime on this as possible."
+    },
+    {
+      "icon": "node-red",
+      "name": "Distortion",
+      "description": "@node-pink #Etheric Slash#, @node-blue #Warp Blast#, @node-blue #Frozen Tornado# can generate @node-red #Distortion#, you want as much of this as possible for high damage."
+    }],
+    [{
+      "icon": "node-yellow",
+      "name": "Warp Blast",
+      "description": "Your @click-left #Main Attack# generates #+2 @node-red Distortion# per 2s"
+      },
+      {
+      "icon": "node-pink",
+      "name": "Etheric Slash",
+      "description": "@node-mage #Teleport# now deals damage, this generates @node-red #Distortion#."
+    }],
+    [{
+      "icon": "node-blue",
+      "name": "Time Vortex",
+      "description": "#[SHIFT] @node-mage Ice Snake# while in @node-red #Dimensional Tear# Makes your @node-blue #Frozen Tornadoes# purple. Having longer #+2s# duration and deals damage #25%# faster. You want to have #100%# uptime on this as well"
+    },
+    {
+      "icon": "node-blue",
+      "name": "Frozen Tornado",
+      "description": "@node-mage #Ice Snake# turns into Tornadoes. @node-pink #Sentient Snake# makes the Tornadoes homing. @node-pink #Snake Nest# gives you 3 Tornadoes."
+    }],
+    {
+      "icon": "ultimate-riftwalker",
+      "name": "Gravitational Collapse",
+      "description": "@node-red #Dimensional Tear# overloads for #10s# and deals #+400%# more damage, you can fly and your @icon-mana #Mana# go down. Your @node-pink #Etheric Slashes# turn into lasers the fire 5 times. Your #Dimensional Rift# collapses at the end of the ultimate."
+    }
+  ],
+
+  "weapons": {
+    "recommended": [
+      {"name": "Trance", "rarity": "mythic", "type": "recommended"},
+      {"name": "Fatal", "rarity": "mythic", "type": "expert"},
+      {"name": "Monster", "rarity": "mythic", "type": "comfy"},
+      {"name": "Warp", "rarity": "mythic"}
+    ],
+    "budget": [
+    ]
+  },
+
+
+  "aspects": [
+    {
+      "rarity": "mythic",
+      "name": "Riftwalker's Embodiment of Reality Alteration",
+      "description": "Your @node-red #Distortion# decays slower and @node-red #Riftbound# gains more duration."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of Manaflux",
+      "description": "@node-pink #Manastorm# requires #-10 @icon-mana Mana# to activate."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of the Inescapable Void",
+      "description": "@node-pink #Dimensional Tear# and @node-red #Rift Rupture# gain more area effect and gives you Resistance."
+    },
+    {
+      "rarity": "legendary",
+      "name": "Aspect of The Comet",
+      "description": "@node-blue #Meteor Shower# gains more AOE."
+    },
+    {
+      "rarity": "legendary",
+      "name": "Aspect of Ray Frost",
+      "description": "@node-blue #Frozen Tornado# gains more AOE."
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "clazz": "Archer",
+  "name": "Sharpshooter",
+  "icon": "sharpshooter",
+  "authors": [],
+
+  "spellCycles": [
+    {
+      "name": "Normal Cycle",
+      "cycle": [
+        {"spell": "Phantom Ray: node-blue"},
+        {"space": "+"},
+        {"spell": "Arrow Bomb: node-archer"},
+        {"space": "+"},
+        {"spell": "Main Attack: click-right"},
+        {"space": "Until"},
+        {"space": ">"},
+        {"spell": "Max Focus: node-red"},
+        {"space": ">"},
+        {"spell": "Crepuscular Ray: node-red"}
+      ]
+    }
+  ],
+
+
+  "abilities": [
+
+    [{
+      "icon": "node-red",
+      "name": "Focus",
+      "description": "Hitting an enemy gains you1 stack of #@node-red Focus# has a #1s# cooldown. Each stack gives #+15%# Damage Bonus. You lose #50%# of it if you miss."
+    },
+    {
+      "icon": "node-red",
+      "name": "Crepuscular Ray",
+      "description": "At #5+ @node-red Focus# if you are #+4# blocks in the air, you will fly and shoot 20 arrows per second until your @node-red #Focus# runs out. You lose #-1 @node-red Focus# every second. "
+    }],
+
+    [{
+      "icon": "node-blue",
+      "name": "Phantom Ray",
+      "description": "@node-archer #Arrow Storm# is now a laser, with @node-pink #Decimator# @node-blue #Phantom Ray# will gain #+15%# damage up to #90%# each time you don't miss with it."
+    },
+    {
+      "icon": "node-blue",
+      "name": "Coursing Restraints",
+      "description": "@node-archer #Arrow Bomb# will reduce enemy resistance by #15%# for #4s# with a #10s# cooldown."
+    }],
+
+    [{
+      "icon": "node-yellow",
+      "name": "Repel",
+      "description": "@node-archer #Arrow Shield# will gain #60%# resistance for #1s# when it loses a charge."
+    },
+    {
+      "icon": "node-archer",
+      "name": "Arrow Shield",
+      "description": "You want to keep this up as it provides massive defensive utility."
+    }],
+
+    {
+      "icon": "ultimate-sharpshooter",
+      "name": "The Twilight Zone",
+      "description": "Summons a bow for #8s# where if you look at enemies, it adds #+1 Twilight# to enemy every #0.05s# that increases the damage dealt by the ultimate. You can release this ultimate anytime by pressing the #Ultimate Button# again. Every enemy scanned with at least #+1 Twilight# will be hit, massive damage and AOE potential."
+    }
+  ],
+
+  "weapons": {
+    "recommended": [
+      {"name": "Stratiformis", "rarity": "mythic", "type": "recommended"},
+      {"name": "Divzer", "rarity": "mythic", "type": "expert"},
+      {"name": "Freedom", "rarity": "mythic", "type": "comfy"},
+      {"name": "Ignis", "rarity": "mythic", "type": "comfy"},
+      {"name": "Spring", "rarity": "mythic"},
+      {"name": "Grandmother", "rarity": "mythic"}
+    ],
+    "budget": [
+      {"name": "Watchman's Vendetta", "rarity": "fabled"}
+    ]
+  },
+
+
+  "aspects": [
+    {
+      "rarity": "mythic",
+      "name": "Sharpshooter's Embodiment of Laser Precision",
+      "description": "Your @node-red #Focus# generates faster and it's cap is raised by 1."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of Extreme Current",
+      "description": "@node-blue #Coursing Restraints# gains more duration."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of the Poltergeist",
+      "description": "@node-blue #Phantom Ray# gains more duration."
+    },
+    {
+      "rarity": "legendary",
+      "name": "Aspect of Further Horizons",
+      "description": "@node-archer #Phantom Ray# gains more range."
+    },
+    {
+      "rarity": "legendary",
+      "name": "Aspect of Clinging Lichen",
+      "description": "@node-pink #Bryophyte Roots# gains more aoe."
+    }
+  ]
+}

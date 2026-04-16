@@ -1,0 +1,134 @@
+{
+  "clazz": "Assassin",
+  "name": "Mirror-Shade",
+  "icon": "acrobat",
+  "authors": ["AstolfoTh1ghs", "Afeena"],
+
+  "spellCycles": [
+    {
+      "name": "Non Satsujin Cycle",
+      "cycle": [
+        {"spell": "Shadow Clone: node-pink"},
+        {"space": ">"},
+        {"spell": "Vanish: node-blue"},
+        {"space": ">"},
+        {"spell": "Spin-Attack: node-assassin"},
+        {"space": " "},
+        {"spell": "Bamboozle: node-blue"},
+        {"space": "x6"}
+      ]
+    },
+    {
+      "name": "Satsujin Cycle",
+      "cycle": [
+        {"spell": "Shadow Clone: node-pink"},
+        {"space": ">"},
+        {"spell": "Vanish: node-blue"},
+        {"space": ">"},
+        {"spell": "Bamboozle: node-blue"},
+        {"space": " "},
+        {"spell": "Spin-Attack: node-assassin"},
+        {"space": "x5"},
+        {"space": ">"},
+        {"spell": "Bamboozle: node-blue"}
+      ]
+    }
+  ],
+
+
+  "abilities": [
+    [
+      {
+        "icon": "node-red",
+        "name": "Mirror Image",
+        "description": "Track this cooldown!!! You MUST have this up when you start your cycle. Slaying a clone give you Damage Bonus."
+      },
+      {
+        "icon": "node-red",
+        "name": "Satsujin",
+        "description": "This will consume ALL @node-red #Marks# from the enemy to deal even more damage. This has a PER ENEMY cooldown, keep track of this."
+      }
+    ],
+    [
+      {
+        "icon": "node-red",
+        "name": "Surprise Strike",
+        "description": "When in @node-blue #Vanish#, on your next hit, you will be revealed and deal #+80%# more damage."
+      },
+      {
+        "icon": "node-red",
+        "name": "Marked",
+        "description": "@node-assassin #Spin-Attack# will be used to apply this. This is a huge damage increase."
+      }
+    ],
+    [
+      {
+        "icon": "node-pink",
+        "name": "Backstab",
+        "description": "This replaces @node-assassin #Multi-Hit# but doesn't replace @node-blue #Bamboozle#. This deals extra damage if you strike from behind or when you are facing the same direction as the enemy."
+      },
+      {
+        "icon": "node-pink",
+        "name": "Sand-bagging",
+        "description": "This is very important. When you are doing your cycle you must be in the enemy to reduce the cooldown of @node-red #Mirror Image#."
+      }
+    ],
+    [
+      {
+        "icon": "node-pink",
+        "name": "Mirage",
+        "description": "Summons a clone after using @node-blue #Bamboozle# or Teleporting to your @node-pink #Shadow Projection#. This clone can activate @node-blue #Sandbagging#."
+      },
+      {
+        "icon": "node-yellow",
+        "name": "Foul Play",
+        "description": "This will make @node-blue #Bamboozle# kill a @node-red #Mirror Clone# instead of having a cooldown."
+      }
+    ],
+    {
+      "icon": "node-yellow",
+      "name": "Last Laugh",
+      "description": "This will make @node-red #Mirror Clone# cast @node-assassin #Multi-Hit# or @node-pink #Backstab# when killed. Other clones will cast any one of your spells."
+    }
+  ],
+
+
+  "weapons": {
+    "recommended": [
+      {"name": "Inferno", "rarity": "mythic", "type": "recommended"},
+      {"name": "Cataclysm", "rarity": "mythic", "type": "expert"},
+      {"name": "Nirvana", "rarity": "mythic"}
+    ],
+    "budget": [
+    ]
+  },
+
+
+  "aspects": [
+    {
+      "rarity": "mythic",
+      "name": "Trickster's Embodiment of Malevolent Mischief",
+      "description": "You get this mainly for the #+1# @node-red Mirror Clone."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of Visual Distortion",
+      "description": "Increases the Maximum @node-red Marked = More Dps."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of Visual Distortion",
+      "description": "Decrease @node-yellow Mirage Cooldown."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of Unyielding Fate",
+      "description": "Increase @node-pink Backstab angle. Good Quality of Life!"
+    },
+    {
+      "rarity": "legendary",
+      "name": "Aspect of the Pinwheel",
+      "description": "Increases @node-assassin Spin-Attack range, Allowing for a easier time hitting enemies."
+    }
+  ]
+}

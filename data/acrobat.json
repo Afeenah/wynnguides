@@ -1,0 +1,106 @@
+{
+  "clazz": "Assassin",
+  "name": "Acrobat",
+  "icon": "acrobat",
+  "authors": ["Iboju", "Afeena"],
+
+  "spellCycles": [
+    {
+      "name": "Simple Cycle",
+      "cycle": [
+        {"spell": "Lacerate: node-red"}, {"space": ">"},
+        {"spell": "Hop: node-pink"}, {"space": ">"},
+        {"spell": "Multi-Hit: node-assassin"}
+      ]
+    },
+    {
+      "name": "Advanced Cycle",
+      "cycle": [
+        {"spell": "Lacerate: node-red"}, {"space": ">"},
+        {"spell": "Hop: node-pink"}, {"space": ">"},
+        {"spell": "Multi-Hit: node-assassin"}, {"space": ">"},
+        {"spell": "Lacerate: node-red"}, {"space": ">"},
+        {"spell": "Multi-Hit: node-assassin"}
+      ]
+    }
+  ],
+
+
+  "abilities": [
+    {
+      "icon": "node-red", "name": "Swan Dive",
+      "description": "Build #Momentum#, the more you have the more damage you deal when you fall. If you don't have @node-yellow #Righting Reflex# press #[SHIFT]# to plunge. @node-yellow #Dancing Blade# launches you up while having #+3 Momentum#. When you fall @node-yellow #Braced Impact# gives #50% Resistance#, @node-yellow #Petal Storm# increases damage dealt when having max @node-red #Jasmine Bloom#."
+
+    },
+    [
+      {
+        "icon": "node-assassin", "name": "Smoke Bomb",
+        "description": "Cast this every #3 cycles# or to #reposition#."
+
+      },
+      {
+        "icon": "node-blue", "name": "Shurikens",
+        "description": "If you build has this then @click-left after @node-assassin #Multi-Hit# to fire."
+
+      }
+    ],
+
+    [
+      {
+        "icon": "node-blue", "name": "Aerial Ace",
+        "description": "Hitting an enemy with @node-red #Swan Dive# will get you #+35% Damage Boost# for #7.5s# you want to try to maintain this."
+
+      },
+      {
+        "icon": "node-blue", "name": "Weightless",
+        "description": "#+1#@icon-mana when #1.25+# blocks in the air. This is your mana printing ability."
+      }
+    ],
+
+    {
+      "icon": "ultimate-acrobat", "name": "Serpent's Garden",
+      "description": "This is Acrobat's ultimate ability, in many cases more than Doubles your DPS. Use wisely as enemies can move away from your Garden!!! (This problem can be negated with the Efflorescence Major Id)."
+    }
+  ],
+
+
+  "weapons": {
+    "recommended": [
+      {"name": "Hanafubuki", "rarity": "mythic", "type": "recommended"},
+      {"name": "Cataclysm", "rarity": "mythic", "type": "expert"},
+      {"name": "Nirvana", "rarity": "mythic"}
+    ],
+    "budget": [
+      {"name": "Petal Blade", "rarity": "legendary"}
+    ]
+  },
+
+
+  "aspects": [
+    {
+      "rarity": "mythic",
+      "name": "Acrobat's Embodiment of Gravity Defiance",
+      "description": "Overall Good aspect, Gives extra @node-red Lacerate Hits, and Allows you to stack Momentum faster at T2+."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of the Agile Blade",
+      "description": "Gives + @node-blue Aerial Ace Duration. Good QOL."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of the Unstoppable Force",
+      "description": "Gives + @node-blue Aerial Ace Damage. Decent Damage Increase."
+    },
+    {
+      "rarity": "legendary",
+      "name": "Aspect of the Stellar Fury",
+      "description": "Increases @node-assassin Multi-Hit hits, very good for DPS."
+    },
+    {
+      "rarity": "legendary",
+      "name": "Aspect of the Pinwheel",
+      "description": "Increases @node-red Lacerate range, Allowing for an easier time hitting enemies."
+    }
+  ]
+}

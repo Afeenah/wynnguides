@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/guide.css">
+    <script src="./scripts/util.js"></script>
+    <script src="./scripts/analytics.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title></title>
+</head>
+<body>
+    <div class="guide-outer">
+        <div class="archetype-card"></div>
+
+        <div class="guide-column" id="spell-abilities">
+            <div class="guide-heading"><b>-- Spell Cycles --</b></div>
+            <div id="spell-cycles-div"></div>
+            <div style="padding: 0.5rem"></div>
+            <div id="abilities-div"></div>
+        </div>
+
+        <div class="guide-column">
+            <div class="guide-heading"><b>-- Weapons --</b></div>
+            <div class="weapons" id="weapons-recommended"></div>
+            <div class="guide-subheading" style="font-size: 0.75em; padding-top: 1.5em">- Budget -</div>
+            <div class="weapons" id="weapons-budget"></div>
+            <div style="padding: 0.5rem"></div>
+            <div class="guide-heading"><b>-- Aspects --</b></div>
+            <div id="aspects-div"></div>
+        </div>
+
+    </div>
+</body>
+<script src="./scripts/guideparser/guideclasses.js"></script>
+<script src="./scripts/guideparser/guideparser.js"></script>
+<script src="./scripts/guide.js"></script>
+<script>
+    const PARAMS = new URLSearchParams(window.location.search);
+    const GUIDE_NAME = PARAMS.get('guide');
+    parseGuide(`./data/${GUIDE_NAME}.json`).then(guide => {
+        document.title = `${guide.name} Guide`
+        guide.archetypeCardHTML()
+        guide.spellCyclesHTML()
+        guide.abilitiesHTML()
+        guide.weaponsHTML()
+        guide.aspectsHTML()
+
+        setTimeout(() => {
+            document.querySelectorAll('.weapon-name').forEach(adjustFontSize);
+            document.querySelectorAll('.spell-display text').forEach(adjustFontSize);
+            document.querySelectorAll('.ability-icon-text').forEach(adjustFontSize);
+        }, 50);
+    })
+</script>
+</html>

@@ -13,7 +13,7 @@ class AspectItem extends HTMLElement {
 
             let iconImg = document.createElement('img');
             iconImg.className = 'aspect-icon';
-            iconImg.src = `${DIRECTORY}aspect${icon}.png`;
+            iconImg.src = `${DIRECTORY}aspect-${icon}.png`;
 
             let outerDiv = document.createElement('div');
             outerDiv.className = 'aspect-outer';

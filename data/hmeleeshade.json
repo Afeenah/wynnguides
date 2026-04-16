@@ -1,0 +1,119 @@
+{
+  "clazz": "Assassin",
+  "name": "H-Melee Shade",
+  "icon": "shadestepper",
+  "authors": ["Afeena"],
+
+  "spellCycles": [
+    {
+      "name": "Get Knives",
+      "cycle": [
+        {"spell": "Smoke-Bomb: node-assassin"},
+        {"space": ">"},
+        {"spell": "Melee: click-left"},
+        {"space": ">"},
+        {"spell": "Vanish: node-blue"},
+        {"space": ">"},
+        {"spell": "Spin-Attack: node-blue"},
+        {"space": ">"},
+        {"spell": "Melee: click-left"}
+      ]
+    },
+    {
+      "name": "Damage Cycle",
+      "cycle": [
+        {"spell": "Vanish: node-blue"},
+        {"space": ">"},
+        {"spell": "Powder-Special: element-earth"},
+        {"space": ">"},
+        {"spell": "Melee: click-left"},
+        {"space": ">"},
+        {"spell": "Vanish: node-blue"}
+      ]
+    }
+  ],
+
+
+  "abilities": [
+    {
+      "icon": "element-earth",
+      "name": "Powder Special",
+      "description": "This replaces @node-blue #Backstab# as your heavy hit. You want to @click-left #Melee# to build the @element-earth #Powder Special# bar. Once it is fully charged, you can #[SHIFT]# + @click-left #Melee# to cast it, dealing massive damage."
+    },
+    [
+      {
+        "icon": "node-red",
+        "name": "Marked",
+        "description": "@node-assassin #Spin-Attack# and @node-assassin #Smoke-Bomb# will be used to apply this. This is a huge damage increase."
+      },
+      {
+        "icon": "node-red",
+        "name": "Surprise Strike",
+        "description": "When in @node-blue #Vanish#, on your next hit, you will be revealed and deal #+80%# more damage."
+      }
+    ],
+    [
+      {
+        "icon": "node-red",
+        "name": "Satsujin",
+        "description": "This will consume ALL @node-red #Marks# from the enemy to deal even more damage. This has a PER ENEMY cooldown, keep track of this."
+      },
+      {
+        "icon": "node-red",
+        "name": "Mirror Image",
+        "description": "Slaying a clone give you #+30%# Damage Bonus for #3s#. You can force it by casting @node-blue #Bamboozle#!"
+      }
+    ],
+    {
+      "icon": "node-blue",
+      "name": "Nightcloak Knives",
+      "description": "You can get these by casting @node-assassin #Spin-Attack# while in @node-blue #Vanish# when the enemy has #2 or more# @node-red #Marks#. These Knives will attack with you dealing more damage."
+    },
+    {
+      "icon": "node-yellow",
+      "name": "Silent Killer",
+      "description": "This resets your @node-blue #Vanish# cooldown entirely after killing an enemy. You want to stay in @node-blue #Vanish# when playing H-Melee Shadestepper."
+    }
+  ],
+
+
+  "weapons": {
+    "recommended": [
+      {"name": "Animosity", "rarity": "fabled", "type": "recommended"},
+      {"name": "Oblivion", "rarity": "mythic", "type": "expert"},
+      {"name": "Inferno", "rarity": "mythic", "type": "comfy"},
+      {"name": "Vengeance", "rarity": "mythic"}
+    ],
+    "budget": [
+    ]
+  },
+
+
+  "aspects": [
+    {
+      "rarity": "mythic",
+      "name": "Shadestepper's Embodiment of Unseen Execution",
+      "description": "This aspect allows you to instantly go in @node-blue Vanish more often. Additionally, the reduction in @node-red Satsujin cooldown is a dps increase. You basically need this."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of the Calling Card",
+      "description": "This not only increases your damage, this makes it easier to get @node-blue Nightcloak Knives because it increases the maximum @node-red Marks per enemy."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of the Dagger's Silhouette",
+      "description": "This makes it easier to get the full benefit of @node-blue Nightcloak Knives, with this aspect, and the @node-red Marks aspect at Tier 2, you can get all your @node-blue Nightcloak Knives in 1 cycle."
+    },
+    {
+      "rarity": "legendary",
+      "name": "Aspect of the Chain Knife",
+      "description": "The extra @click-left Melee range makes it easier to build the @element-earth Powder Special bar."
+    },
+    {
+      "rarity": "legendary",
+      "name": "Aspect of the Pinwheel",
+      "description": "This makes it easier to get @node-blue Nightcloak Knives as the increased @node-assassin Spin-Attack range."
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "clazz": "warrior",
+  "name": "Battlemonk",
+  "icon": "battlemonk",
+  "authors": [""],
+
+  "spellCycles": [
+    {
+      "name": "Flush Cycle",
+      "cycle":  [
+        {"spell": "War-Scream: node-warrior"},
+        {"space": ">"},
+        {"spell": "War-Scream: node-warrior"},
+        {"space": ">"},
+        {"spell": "War-Scream: node-warrior"}
+      ]
+    },
+    {
+      "name": "Damage Cycle",
+      "cycle":  [
+        {"spell": "Charge: node-warrior"},
+        {"space": ">"},
+        {"spell": "Uppercut: node-warrior"},
+        {"space": ">"},
+        {"spell": "War-Scream: node-red"},
+        {"space": ">"},
+        {"spell": "Charge: node-warrior"},
+        {"space": ">"},
+        {"spell": "Uppercut: node-warrior"},
+        {"space": ">"},
+        {"spell": "Bash: node-red"}
+      ]
+    }
+  ],
+
+
+  "abilities": [
+    {
+      "icon": "node-red", "name": "Generalist",
+      "description": "This is the most important ability. This makes it so that every 3 spells does not consume mana. This should activate only @node-warrior #War-Scream# and @node-warrior #Bash# during the #Damage Cycle#. If not then you must setup using the #Flush Cycle# "
+    },
+
+    [{
+      "icon": "node-red", "name": "Pressure",
+      "description": "This will buff abilities that activate @node-red #Generalist#."
+    },
+    {
+      "icon": "node-red", "name": "Sacred Surge",
+      "description": "At #25 Holy Power# your @node-warrior #Uppercut# will be enhanced."
+    }],
+
+    [{
+      "icon": "node-red", "name": "Whirlwind Strike",
+      "description": "@node-warrior #Uppercut# will launch you upwards."
+    },
+    {
+      "icon": "node-pink", "name": "Discombobulate",
+      "description": "This stacks on enemies giving you #+Damage# when damaging enemies."
+    }],
+
+    [{
+      "icon": "node-blue", "name": "Thunderclap",
+      "description": "This changes @node-warrior #Bash# into a damage field aoe around you."
+    },
+    {
+      "icon": "node-blue", "name": "Harmony",
+      "description": "Activating @node-red #Generalist# give you #+1 @node-blue Harmony# up to #5#. Every stack gives #+4%# Damage."
+    }],
+    {
+      "icon": "node-yellow", "name": "Aerodynamics",
+      "description": "This allows you to steer during your @node-warrior #Charge#"
+    }
+  ],
+
+
+  "weapons": {
+    "recommended": [
+      {"name": "Idol", "rarity": "mythic", "type": "recommended"}
+    ],
+    "budget": [
+
+    ]
+  },
+
+
+  "aspects": [
+    {
+      "rarity": "mythic",
+      "name": "Battle Monk's Embodiment of Complete Synchrony",
+      "description": "Makes @node-red #Pressure# stronger."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of the Enforcer",
+      "description": "@node-blue #Harmony# is stronger every stack."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of Seeing Stars",
+      "description": "Your maximum @node-pink #Discombobulated# is increased."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of Rallying Fervor",
+      "description": "@node-red #Sacred Surge# is easier to generate."
+    },
+    {
+      "rarity": "legendary",
+      "name": "Aspect of Earth Shaking",
+      "description": "@node-blue #Thunderclap# is has larger aoe."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "clazz": "Archer",
+  "name": "Boltslinger",
+  "icon": "boltslinger",
+  "authors": ["AstolfoTh1ghs", "Afeena"],
+
+  "spellCycles": [
+    {
+      "name": "Normal Cycle",
+      "cycle": [
+        {"spell": "Arrow Storm: node-archer"},
+        {"space": "+"},
+        {"spell": "Arrow Bomb: node-archer"},
+        {"space": "+"},
+        {"spell": "Arrow Bomb: node-archer"},
+        {"space": "x3"},
+        {"space": ">"},
+        {"spell": "Guardian Angels: node-red"}
+      ]
+    }
+  ],
+
+
+  "abilities": [
+    [
+      {
+        "icon": "node-red",
+        "name": "Guardian Angels",
+        "description": "You want 100% uptime on these Angels! If they run out cast @node-archer #Arrow Shield# to refresh them!"
+      },
+      {
+        "icon": "node-pink",
+        "name": "Leap",
+        "description": "This is very good mobility! As of Fruma it's omni-directional, this is how you can easily dodge attacks such the watched phase in #Nameless Anomaly#."
+      }
+    ],
+    [
+      {
+        "icon": "node-pink",
+        "name": "Recycling",
+        "description": "This ability is your mana printer! When you miss any shot, you gain #+0.08# @icon-mana."
+      },
+      {
+        "icon": "node-yellow",
+        "name": "Transience",
+        "description": "This synergies very well with @node-pink #Recycling#! Your shots now pierce! which means that you will get mana back for every arrow you shoot!"
+      }
+    ],
+    {
+      "icon": "node-yellow",
+      "name": "Elusive",
+      "description": "This allows you to not have recoil from @node-archer #Arrow Storm# without this Boltslinger feels almost unplayable."
+    },
+    {
+      "icon": "node-yellow",
+      "name": "Windy Feet",
+      "description": "This is how Bolt gets insane amounts of speed for free. This gives #+40% Speed# when you cast escape for you and your teammates. With @node-yellow #Stormy Feet# its increases to #+60% Speed#. In combination with @node-pink #Frenzy# you can easily hit #120% Speed# and more."
+    }
+  ],
+
+  "weapons": {
+    "recommended": [
+      {"name": "Stratiformis", "rarity": "mythic", "type": "recommended"},
+      {"name": "Divzer", "rarity": "mythic", "type": "expert"},
+      {"name": "Freedom", "rarity": "mythic", "type": "comfy"},
+      {"name": "Spring", "rarity": "mythic"},
+      {"name": "Grandmother", "rarity": "mythic"}
+    ],
+    "budget": [
+      {"name": "Watchman's Vendetta", "rarity": "fabled"}
+    ]
+  },
+
+
+  "aspects": [
+    {
+      "rarity": "mythic",
+      "name": "Boltslinger's Embodiment of Rended Skies",
+      "description": "Your @node-red Guardian Angels fire faster and deal more damage. Your @node-archer Arrow Storm gets more arrows = more damage."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of the Inexhaustible Quiver",
+      "description": "@node-archer Arrow Storm gets more arrows = more damage."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of Heavenly Mandate",
+      "description": "@node-red Guardian Angels get more ammo, good QOL!"
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of Undercrank",
+      "description": "@node-pink Frenzy stacks faster and #+20% Speed# cap. Good QOL!"
+    },
+    {
+      "rarity": "legendary",
+      "name": "Aspect of Further Horizons",
+      "description": "@node-archer Arrow Storm spread is lower and velocity is faster, making them easier to hit = more dps."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "clazz": "warrior",
+  "name": "Big-Mac",
+  "icon": "bigmac",
+  "authors": [""],
+
+  "spellCycles": [
+    {
+      "name": "Main Cycle",
+      "cycle":  [
+        {"spell": "War-Scream: node-warrior"},
+        {"space": ">"},
+        {"spell": "Bash: node-warrior"},
+        {"space": "or"},
+        {"spell": "Buried Light: node-blue"},
+        {"space": ">"},
+        {"spell": "Uppercut: node-warrior"}
+      ]
+    }
+  ],
+
+
+  "abilities": [
+    {
+      "icon": "node-red", "name": "Mantle of Bovemists",
+      "description": "@node-warrior #War-Scream# will give you shields around you that blocks incoming damage and break when hit. With @node-pink #Shield-Strike# You can send the broken shields to attack. With @node-pink #Enlightenment#, @node-pink #Shield-Strike# will give teammates in a #16# block range #+1 @node-red Mantle#"
+    },
+    {
+      "icon": "node-red", "name": "Heavenly Trumpet",
+      "description": "When casting #[SHIFT] + @node-warrior War-Scream# at #25 Holy Power# you can give #Overhealth# to your teammates. The amount of #Overhealth# is determined by the amount of #Holy Power# consumed up to #100%#. This scales off of your teammate's #Max HP#. So at #100%# it doubles their #HP#."
+    },
+
+    [{
+      "icon": "node-red", "name": "Blood Pact",
+      "description": "When you run out of @icon-mana #Mana#. Your spells will start using your #HP# instead. Be careful as if your health is too low you might have the chance of getting 1-shot."
+    },
+    {
+      "icon": "node-red", "name": "Sacred Surge",
+      "description": "At #25 Holy Power# your @node-warrior #Uppercut# will be enhanced."
+    }],
+
+    [{
+      "icon": "node-pink", "name": "Emboldening Cry",
+      "description": "@node-warrior #War-Scream# gives an extra #+8%# Damage and #+5%# Resistance to teammates."
+    },
+    {
+      "icon": "node-blue", "name": "Provoke",
+      "description": "@node-warrior #War-Scream# Taunts Enemies for #8s#, this is good for protecting your squishier teammates in boss fights and essential to some advanced strategies. #15s# cooldown."
+    }],
+
+    [{
+      "icon": "node-blue", "name": "Radiance",
+      "description": "@node-warrior #Bash# will provide #+15%# more stats to teammates for #8s# with a few excluded. This has a #15s# cooldown."
+    },
+    {
+      "icon": "node-blue", "name": "Buried Light",
+      "description": "@node-warrior #Bash# will provide #+15%# more stats to teammates for #8s# with a few excluded. This has a #15s# cooldown."
+    }],
+
+    [{
+      "icon": "node-yellow", "name": "Devout Union",
+      "description": "This redirects #15%# of the damage taken by teammates to you in a #8# block range."
+    },
+    {
+      "icon": "node-yellow", "name": "Aerodynamics",
+      "description": "This allows you to steer during your @node-warrior #Charge#"
+    }]
+  ],
+
+
+  "weapons": {
+    "recommended": [
+      {"name": "Guardian", "rarity": "mythic", "type": "recommended"}
+    ],
+    "budget": [
+
+    ]
+  },
+
+
+  "aspects": [
+    {
+      "rarity": "mythic",
+      "name": "Fallen's Embodiment of Blind Fury",
+      "description": "Reduces @node-red #Blood Pact's# HP costs, almost required."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of Rallying Fervor",
+      "description": "@node-red #Sacred Surge# is easier to generate."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of Rekindling",
+      "description": "@node-blue #Rejuvanating Skin# restores HP faster."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of Empowering Fantasy",
+      "description": "@node-blue #Radience# lasts longer."
+    },
+    {
+      "rarity": "legendary",
+      "name": "Aspect of Bovine Inspiration",
+      "description": "@node-pink #Emboldening Cry# is stronger."
+    }
+  ]
+}

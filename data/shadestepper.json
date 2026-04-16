@@ -1,0 +1,123 @@
+{
+  "clazz": "Assassin",
+  "name": "Shadestepper",
+  "icon": "shadestepper",
+  "authors": ["Afeena"],
+
+  "spellCycles": [
+    {
+      "name": "Get Knives",
+      "cycle": [
+        {"spell": "Smoke-Bomb: node-assassin"},
+        {"space": ">"},
+        {"spell": "Vanish: node-blue"},
+        {"space": ">"},
+        {"spell": "Spin-Attack: node-blue"}
+      ]
+    },
+    {
+      "name": "Backstab Damage Cycle",
+      "cycle": [
+        {"spell": "Backstab: node-pink"},
+        {"space": "x1-2"},
+        {"space": ">"},
+        {"spell": "Vanish: node-blue"}
+      ]
+    },
+    {
+      "name": "Ultimate Damage Cycle",
+      "cycle": [
+        {"spell": "Backstab: node-pink"},
+        {"space": "x2"},
+        {"space": ">"},
+        {"spell": "Spin-Attack: node-assassin"}
+      ]
+    }
+  ],
+
+
+  "abilities": [
+    [
+      {
+        "icon": "node-red",
+        "name": "Marked",
+        "description": "@node-assassin #Spin-Attack# and @node-assassin #Smoke-Bomb# will be used to apply this. This is a huge damage increase."
+      },
+      {
+        "icon": "node-red",
+        "name": "Surprise Strike",
+        "description": "When in @node-blue #Vanish#, on your next hit, you will be revealed and deal #+80%# more damage."
+      }
+    ],
+    [
+      {
+        "icon": "node-red",
+        "name": "Satsujin",
+        "description": "This will consume ALL @node-red #Marks# from the enemy to deal even more damage. This has a PER ENEMY cooldown, keep track of this."
+      },
+      {
+        "icon": "node-pink",
+        "name": "Backstab",
+        "description": "This replaces @node-assassin #Multi-Hit#. This deals extra damage if you strike from behind or when you are facing the same direction as the enemy."
+      }
+    ],
+    {
+      "icon": "node-blue",
+      "name": "Nightcloak Knives",
+      "description": "You can get these by casting @node-assassin #Spin-Attack# while in @node-blue #Vanish# when the enemy has #2 or more# @node-red #Marks#. These Knives will attack with you dealing more damage."
+    },
+    {
+      "icon": "node-yellow",
+      "name": "Shadow Siphon",
+      "description": "When you hit a @node-pink #Backstab# your @node-blue #Vanish# cooldown gets reduced by #-1.75s# with the #Mythic Shadestepper Aspect#, you can pretty much instantly @node-blue #Vanish# after your @node-pink #Backstab#. Additionally, @node-yellow #Silent Killer# resets your @node-blue #Vanish# cooldown entirely after killing an enemy. You want to stay in @node-blue #Vanish# when playing Shadestepper."
+    },
+    {
+      "icon": "ultimate-shadestepper",
+      "name": "Pierce the Veil",
+      "description": "In this ultimate, you get the benefits of @node-blue #Vanish# while applying @node-red #Marks# to nearby enemies. You also can regen HP and Mana! Very useful."
+    }
+  ],
+
+
+  "weapons": {
+    "recommended": [
+      {"name": "Weathered", "rarity": "mythic", "type": "recommended"},
+      {"name": "Cataclysm", "rarity": "mythic", "type": "expert"},
+      {"name": "Oblivion", "rarity": "mythic", "type": "expert"},
+      {"name": "Nirvana", "rarity": "mythic"},
+      {"name": "Grimtrap", "rarity": "mythic"}
+    ],
+    "budget": [
+      {"name": "Flameshot Hilt", "rarity": "legendary"}
+    ]
+  },
+
+
+  "aspects": [
+    {
+      "rarity": "mythic",
+      "name": "Shadestepper's Embodiment of Unseen Execution",
+      "description": "This aspect allows you to instantly go in @node-blue Vanish after you @node-pink Backstab your enemy, the reduction in @node-red Satsujin cooldown is a dps increase. You basically need this."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of the Calling Card",
+      "description": "This not only increases your damage, this makes it easier to get @node-blue Nightcloak Knives because it increases the maximum @node-red Marks per enemy."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of the Dagger's Silhouette",
+      "description": "This makes it easier to get the full benefit of @node-blue Nightcloak Knives, with this aspect, and the @node-red Marks aspect at Tier 2, you can get all your @node-blue Nightcloak Knives in 1 cycle."
+    },
+    {
+      "rarity": "fabled",
+      "name": "Aspect of the Unyielding Fate",
+      "description": "This just makes it easier to @node-pink Backstab as it increases the success angle."
+    },
+    {
+      "rarity": "legendary",
+      "name": "Aspect of the Pinwheel",
+      "description": "This makes it easier to get @node-blue Nightcloak Knives as the increased @node-assassin Spin-Attack range."
+    }
+  ]
+}
