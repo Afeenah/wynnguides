@@ -38,13 +38,13 @@ async function loadFiles() {
         new ClassDisplay("archer", "Boltslinger", "boltslinger", "boltslinger")
     ]
     const review = [
-        new ClassDisplay("warrior", "Bash-Uppercut", "fallen", "wip/bashuppercut"),
-        new ClassDisplay("warrior", "Upper-Scream", "fallen", "wip/upperscream"),
-        new ClassDisplay("warrior", "Fallen-Generalist", "fallengeneralist", "wip/generalistfallen"),
-        new ClassDisplay("warrior", "Battlemonk", "battlemonk", "wip/battlemonk"),
-        new ClassDisplay("warrior", "Big-Mac", "bigmac", "wip/bigmac"),
+        new ClassDisplay("warrior", "Bash-Uppercut", "fallen", "bashuppercut"),
+        new ClassDisplay("warrior", "Upper-Scream", "fallen", "upperscream"),
+        new ClassDisplay("warrior", "Fallen-Generalist", "fallengeneralist", "generalistfallen"),
+        new ClassDisplay("warrior", "Battlemonk", "battlemonk", "battlemonk"),
+        new ClassDisplay("warrior", "Big-Mac", "bigmac", "bigmac"),
         new ClassDisplay("archer", "Sharpshooter", "sharpshooter", "wip/sharpshooter"),
-        new ClassDisplay("mage", "Riftwalker", "riftwalker", "wip/riftwalker")
+        new ClassDisplay("mage", "Riftwalker", "riftwalker", "riftwalker")
     ]
 
     ClassDisplay.renderAll(finished, 'finished');
