@@ -43,7 +43,7 @@ async function loadFiles() {
         new ClassDisplay("warrior", "Fallen-Generalist", "fallengeneralist", "generalistfallen"),
         new ClassDisplay("warrior", "Battlemonk", "battlemonk", "battlemonk"),
         new ClassDisplay("warrior", "Big-Mac", "bigmac", "bigmac"),
-        new ClassDisplay("archer", "Sharpshooter", "sharpshooter", "wip/sharpshooter"),
+        new ClassDisplay("archer", "Sharpshooter", "sharpshooter", "sharpshooter"),
         new ClassDisplay("mage", "Riftwalker", "riftwalker", "riftwalker")
     ]
 
