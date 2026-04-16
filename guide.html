@@ -51,6 +51,7 @@
                 document.querySelectorAll('.spell-display text').forEach(adjustFontSize);
                 document.querySelectorAll('.ability-icon-text').forEach(adjustFontSize);
             });
+            addListeners()
         }, 150);
     }).catch(reason => {
         console.log("Could not find image:" + reason)

@@ -1,4 +1,4 @@
-const ASSETS_DIR = "/wynnguides/assets/images/" // Relative to HTML
+const ASSETS_DIR = "/wynnguides/assets/images/"
 
 class Guide {
     constructor(clazz, name, icon, authors, spellCycles, abilities, weapons, aspects) {

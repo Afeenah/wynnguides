@@ -23,15 +23,6 @@
         {"space": ">"},
         {"spell": "Vanish: node-blue"}
       ]
-    },
-    {
-      "name": "Ultimate Damage Cycle",
-      "cycle": [
-        {"spell": "Backstab: node-pink"},
-        {"space": "x2"},
-        {"space": ">"},
-        {"spell": "Spin-Attack: node-assassin"}
-      ]
     }
   ],
 

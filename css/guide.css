@@ -236,6 +236,16 @@ body {
     overflow: hidden;
     white-space: nowrap;
 }
+.weapon-tooltip {
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    max-width: 150px;
+}
 
 
 
