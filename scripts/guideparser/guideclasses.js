@@ -1,4 +1,4 @@
-const ASSETS_DIR = "./assets/images/" // Relative to HTML
+const ASSETS_DIR = "/wynnguides/assets/images/" // Relative to HTML
 
 class Guide {
     constructor(clazz, name, icon, authors, spellCycles, abilities, weapons, aspects) {
@@ -90,7 +90,7 @@ class SpellCycle {
             } else if (typeof node === 'object' && node !== null) {
                 SPELL_CYCLE_HTML += `
                     <div class="spell-display">
-                        <img src="${ASSETS_DIR}/${node.icon}.png" alt="${node.icon}">${node.name}
+                        <img src="${ASSETS_DIR}${node.icon}.png" alt="${node.icon}">${node.name}
                     </div>
                 `
             }
@@ -117,7 +117,7 @@ class Ability {
     html() {
         let ABILITY_HTML = '<div class="ability">';
         ABILITY_HTML += `<div class="ability-icon">`;
-        ABILITY_HTML += `<img src="${ASSETS_DIR}/${this.icon}.png" alt="${this.icon}">`;
+        ABILITY_HTML += `<img src="${ASSETS_DIR}${this.icon}.png" alt="${this.icon}">`;
         ABILITY_HTML += `<div class="ability-icon-text">${this.name}</div>`;
         ABILITY_HTML += `</div>`;
         ABILITY_HTML += `<div class="ability-description">${parseDescription(this.description)}</div>`;
@@ -141,21 +141,21 @@ class Weapon {
     }
 
     async html(clazz) {
-        const typeHTML = this.type ? `<img class="weapon-label" src="${DIRECTORY}icon-${this.type}.png" alt="Icon">` : '';
+        const typeHTML = this.type ? `<img class="weapon-label" src="${ASSETS_DIR}icon-${this.type}.png" alt="Icon">` : '';
         const imageName = this.name.toLowerCase().replace(/\s/g, '');
         const className = clazz.toLowerCase();
 
         let backgroundImageUrl = '';
-        await fetch(`${DIRECTORY}weapon-${imageName}.png`)
+        await fetch(`${ASSETS_DIR}weapon-${imageName}.png`)
             .then(res => {
                 if (res.ok) {
                     backgroundImageUrl = res.url;
                 } else {
-                    backgroundImageUrl = DIRECTORY + "weapon-" + className + ".png";
+                    backgroundImageUrl = ASSETS_DIR + "weapon-" + className + ".png";
                 }
             })
             .catch(err => {
-                backgroundImageUrl = DIRECTORY + "weapon-" + className + ".png";
+                backgroundImageUrl = ASSETS_DIR + "weapon-" + className + ".png";
             })
 
         return `
@@ -181,7 +181,7 @@ class Aspect {
 
         return `
         <div class="aspect">
-            <img class="aspect-icon" src="${DIRECTORY}aspect-${className}.png" alt="${clazz}">
+            <img class="aspect-icon" src="${ASSETS_DIR}aspect-${className}.png" alt="${clazz}">
                 <div class="aspect-outer">
                     <b style="color: ${getRarity(this.rarity)}; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${this.name}</b>
                     <div class="aspect-description">${parseDescription(this.description)}</div>
