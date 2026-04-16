@@ -1,4 +1,4 @@
-const ASSETS_DIR = "../assets/images/" // Relative to HTML
+const ASSETS_DIR = "./assets/images/" // Relative to HTML
 
 class Guide {
     constructor(clazz, name, icon, authors, spellCycles, abilities, weapons, aspects) {
