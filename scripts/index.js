@@ -36,12 +36,12 @@ async function loadFiles() {
         new ClassDisplay("shaman", "Puppet Bomber", "puppetbomber", "puppetbomber"),
         new ClassDisplay("shaman", "Summoner", "summoner", "summoner"),
         new ClassDisplay("archer", "Boltslinger", "boltslinger", "boltslinger"),
+        new ClassDisplay("archer", "Sharpshooter", "sharpshooter", "sharpshooter"),
         new ClassDisplay("warrior", "Bash-Uppercut", "fallen", "bashuppercut"),
         new ClassDisplay("warrior", "Upper-Scream", "fallen", "upperscream"),
         new ClassDisplay("warrior", "Fallen-Generalist", "fallengeneralist", "generalistfallen"),
         new ClassDisplay("warrior", "Battlemonk", "battlemonk", "battlemonk"),
         new ClassDisplay("warrior", "Big-Mac", "bigmac", "bigmac"),
-        new ClassDisplay("archer", "Sharpshooter", "sharpshooter", "sharpshooter"),
         new ClassDisplay("mage", "Riftwalker", "riftwalker", "riftwalker")
     ]
     const review = [
