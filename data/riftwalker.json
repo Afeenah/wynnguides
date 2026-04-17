@@ -41,18 +41,19 @@
     {
       "icon": "node-red",
       "name": "Distortion",
-      "description": "@node-pink #Etheric Slash#, @node-blue #Warp Blast#, @node-blue #Frozen Tornado# can generate @node-red #Distortion#, you want as much of this as possible for high damage."
+      "description": "@node-pink #Etheric Slash#, @node-yellow #Warp Blast#, @node-blue #Frozen Tornado# can generate @node-red #Distortion#, you want as much of this as possible for high damage."
     }],
     [{
-      "icon": "node-yellow",
-      "name": "Warp Blast",
-      "description": "Your @click-left #Main Attack# generates #+2 @node-red Distortion# per 2s"
-      },
-      {
       "icon": "node-pink",
       "name": "Etheric Slash",
       "description": "@node-mage #Teleport# now deals damage, this generates @node-red #Distortion#."
+    }
+    ,{
+      "icon": "node-blue",
+      "name": "Devitalize",
+      "description": "If your build has this, casing @node-mage #Heal# around your enemies will make them deal #-15%# Damage."
     }],
+
     [{
       "icon": "node-blue",
       "name": "Time Vortex",
@@ -66,7 +67,7 @@
     {
       "icon": "ultimate-riftwalker",
       "name": "Gravitational Collapse",
-      "description": "@node-red #Dimensional Tear# overloads for #10s# and deals #+400%# more damage, you can fly and your @icon-mana #Mana# go down. Your @node-pink #Etheric Slashes# turn into lasers the fire 5 times. Your #Dimensional Rift# collapses at the end of the ultimate."
+      "description": "@node-red #Dimensional Tear# overloads for #10s# and deals #+400%# more damage, you can fly and your @icon-mana #Mana# does not go down. Your @node-pink #Etheric Slashes# turn into lasers the fire 5 times. Your #Dimensional Rift# collapses at the end of the ultimate."
     }
   ],
 
