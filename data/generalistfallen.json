@@ -76,7 +76,8 @@
   "weapons": {
     "recommended": [
       {"name": "Bloodbath", "rarity": "mythic", "type": "recommended"},
-      {"name": "Hero", "rarity": "mythic"}
+      {"name": "Hero", "rarity": "mythic"},
+      {"name": "Restitution", "rarity": "mythic", "type": "gimmick"}
     ],
     "budget": [
 

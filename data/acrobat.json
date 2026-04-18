@@ -20,7 +20,7 @@
         {"spell": "Hop: node-pink"}, {"space": ">"},
         {"spell": "Multi-Hit: node-assassin"}, {"space": ">"},
         {"spell": "Lacerate: node-red"}, {"space": ">"},
-        {"spell": "Multi-Hit: node-assassin"}
+        {"spell": "Dash: node-assassin"}
       ]
     }
   ],
